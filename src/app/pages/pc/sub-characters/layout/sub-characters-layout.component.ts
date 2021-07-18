@@ -7,18 +7,26 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./sub-characters-layout.component.css"],
 })
 export class SubCharactersLayoutComponent implements OnInit {
-  @ViewChild("pMenu") pMenuElem: ElementRef;
-  @ViewChild("mMenu") mMenu: ElementRef;
+  @ViewChild("pMenu") pMenuElement: ElementRef;
+  @ViewChild("mMenu") mMenuElement: ElementRef;
+
+  menuFlag: boolean = false;
 
   constructor(private renderer: Renderer2) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    
+  }
 
   public clickPcMenu() {
     console.log("clickPcMenu");
-  }
-
-  public clickMobileMenu() {
-    console.log("clickMobileMenu");
+    if (!this.menuFlag) {
+      this.renderer.addClass(this.pMenuElement.nativeElement, 'on');
+      this.renderer.addClass(this.mMenuElement.nativeElement, 'on');
+    } else {
+      this.renderer.removeClass(this.pMenuElement.nativeElement, 'on');
+      this.renderer.removeClass(this.mMenuElement.nativeElement, 'on');
+    }
+    this.menuFlag = !this.menuFlag;
   }
 }

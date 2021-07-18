@@ -3,10 +3,10 @@
     <header class="promotion-header">
       <ul class="promotion-list">
         <li class="promotion-item">
-          <a href="/" target="_blank" class="promotion-item-link">방송 정보</a>
+          <a href="/subcharacters/broadcast" class="promotion-item-link">방송 정보</a>
         </li>
         <li class="promotion-item">
-          <a href="/" target="_blank" class="promotion-item-link">페르소나 행성</a>
+          <a href="/subcharacters/personaplanet" class="promotion-item-link">페르소나 행성</a>
         </li>
         <li class="promotion-item">
           <a href="/" target="_blank" class="promotion-item-link logo"><span class="blind">부캐시대</span></a>
@@ -27,7 +27,7 @@
             </svg>
           </a>
         </li>
-        <li class="promotion-item" #pMenu>
+        <li class="promotion-item" #pMenu (click)="clickPcMenu()">
           <button type="button" class="promotion-item-link menu">
             <span class="blind">메뉴</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="28">
@@ -52,10 +52,10 @@
       <div class="menu-layer" #mMenu>
         <ul class="menu-layer-list">
             <li class="menu-layer-item">
-                <a href="/" target="_blank" class="menu-layer-link">방송 정보</a>
+                <a href="/subcharacters/broadcast" class="menu-layer-link">방송 정보</a>
             </li>
             <li class="menu-layer-item">
-                <a href="/" target="_blank" class="menu-layer-link">페르소나 행성</a>
+                <a href="/subcharacters/personaplanet" class="menu-layer-link">페르소나 행성</a>
             </li>
             <li class="menu-layer-item">
                 <a href="/" target="_blank" class="menu-layer-link">부캐유니버스</a>

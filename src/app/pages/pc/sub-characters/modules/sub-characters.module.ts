@@ -16,6 +16,10 @@ const routes: Routes = [
       { path: "", component: SubCharactersMainComponent },
     ],
   },
+  {
+    path: "**",
+    redirectTo: "subcharacters",
+  },
 ];
 
 @NgModule({

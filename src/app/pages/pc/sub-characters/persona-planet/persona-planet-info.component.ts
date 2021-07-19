@@ -11,7 +11,9 @@ export class PersonaPlanetInfoComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.initSwiper();
+  }
 
   public initSwiper() {
     this.swiper = new Swiper(".swiper-container", {

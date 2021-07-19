@@ -5,6 +5,8 @@ import { BroadcastInfoComponent } from "../broadcast/broadcast-info.component";
 import { PersonaPlanetInfoComponent } from "../persona-planet/persona-planet-info.component";
 import { RouterModule, Routes } from "@angular/router";
 import { SubCharactersLayoutComponent } from "../layout/sub-characters-layout.component";
+import { SonghaeComponent } from "../vr-characters/songhae/songhae.component";
+import { MommysonComponent } from "../vr-characters/mommyson/mommyson.component";
 
 const routes: Routes = [
   {
@@ -13,6 +15,7 @@ const routes: Routes = [
     children: [
       { path: "broadcast", component: BroadcastInfoComponent },
       { path: "personaplanet", component: PersonaPlanetInfoComponent },
+      { path: "songhae", component: SonghaeComponent },
       { path: "", component: SubCharactersMainComponent },
     ],
   },
@@ -28,6 +31,8 @@ const routes: Routes = [
     BroadcastInfoComponent,
     PersonaPlanetInfoComponent,
     SubCharactersLayoutComponent,
+    SonghaeComponent,
+    MommysonComponent,
   ],
   imports: [CommonModule, RouterModule.forChild(routes)],
 })

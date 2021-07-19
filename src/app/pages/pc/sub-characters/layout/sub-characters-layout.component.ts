@@ -14,18 +14,15 @@ export class SubCharactersLayoutComponent implements OnInit {
 
   constructor(private renderer: Renderer2) {}
 
-  ngOnInit() {
-    
-  }
+  ngOnInit() {}
 
   public clickPcMenu() {
-    console.log("clickPcMenu");
     if (!this.menuFlag) {
-      this.renderer.addClass(this.pMenuElement.nativeElement, 'on');
-      this.renderer.addClass(this.mMenuElement.nativeElement, 'on');
+      this.renderer.addClass(this.pMenuElement.nativeElement, "on");
+      this.renderer.addClass(this.mMenuElement.nativeElement, "on");
     } else {
-      this.renderer.removeClass(this.pMenuElement.nativeElement, 'on');
-      this.renderer.removeClass(this.mMenuElement.nativeElement, 'on');
+      this.renderer.removeClass(this.pMenuElement.nativeElement, "on");
+      this.renderer.removeClass(this.mMenuElement.nativeElement, "on");
     }
     this.menuFlag = !this.menuFlag;
   }

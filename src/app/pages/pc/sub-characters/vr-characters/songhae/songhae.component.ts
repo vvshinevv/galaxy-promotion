@@ -21,6 +21,7 @@ import Swiper from "swiper";
 export class SonghaeComponent implements OnInit {
   @ViewChild("target") targetElement: ElementRef;
   @ViewChild("closeLayer") closeLayerElement: ElementRef;
+  @ViewChild("profileBoxLayer") profileBoxLayerElement: ElementRef;
   @ViewChild("promotionMain") promotionMainElement: ElementRef;
   @ViewChild("backToHome") backToHomeElement: ElementRef;
   @ViewChild("profileLink") profileLinkElement: ElementRef;
@@ -28,13 +29,17 @@ export class SonghaeComponent implements OnInit {
   @ViewChild("itemLink") itemLinkElement: ElementRef;
   @ViewChild("pcProfile") pcProfileElement: ElementRef;
   @ViewChild("mobileProfile") mobileProfileElement: ElementRef;
+  @ViewChild("goods") goodsElement: ElementRef;
+  @ViewChild("location") locationElement: ElementRef;
 
   camera: any;
   scene: any;
   renderer: any;
   mixer: any;
-  swiper: any;
+  swiper1: any;
+  swiper2: any;
 
+  clickProfileBoxLayerFlag: boolean = false;
   clickProfileFlag: boolean = false;
   clickSaeulFlag: boolean = false;
   clickItemFlag: boolean = false;
@@ -45,12 +50,10 @@ export class SonghaeComponent implements OnInit {
     this.initSwiper();
     this.init();
     this.render(this.renderer);
-    
   }
 
-
   public initSwiper() {
-    this.swiper = new Swiper(".swiper-container", {
+    this.swiper1 = new Swiper(".swiper1", {
       slidesPerView: 1,
       spaceBetween: 96,
 
@@ -59,37 +62,77 @@ export class SonghaeComponent implements OnInit {
         prevEl: ".swiper-button-prev",
       },
     });
-  }
 
-  public clickCloseLayer() {
-    this.r2.removeClass(this.promotionMainElement.nativeElement, "profile");
-    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
-
-    this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "");
-    this.r2.setStyle(this.closeLayerElement.nativeElement, "display", "none");
-    this.r2.setStyle(this.pcProfileElement.nativeElement, "display", "none");
     this.r2.setStyle(
       this.mobileProfileElement.nativeElement,
       "display",
       "none"
     );
+
+    this.swiper2 = new Swiper(".swiper2", {
+      slidesPerView: 1,
+      spaceBetween: 72,
+      direction: "horizontal",
+      loop: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    this.r2.setStyle(this.goodsElement.nativeElement, "display", "none");
+  }
+
+  public clickCloseLayer() {
+    this.r2.removeClass(this.promotionMainElement.nativeElement, "profile");
+    this.r2.removeClass(this.promotionMainElement.nativeElement, "saeul");
+    this.r2.removeClass(this.promotionMainElement.nativeElement, "item");
+    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
+
+    this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "");
+    this.r2.setStyle(this.closeLayerElement.nativeElement, "display", "none");
+    this.r2.setStyle(this.pcProfileElement.nativeElement, "display", "none");
+    this.r2.setStyle(this.mobileProfileElement.nativeElement, "display", "none");
+    this.r2.setStyle(this.goodsElement.nativeElement, "display", "none");
+    this.r2.setStyle(this.locationElement.nativeElement, "display", "none");
   }
 
   public clickProfile() {
     this.clickProfileFlag = !this.clickProfileFlag;
-
+    this.clickCloseLayer();
     this.r2.addClass(this.promotionMainElement.nativeElement, "profile");
     this.r2.addClass(this.profileLinkElement.nativeElement, "on");
-
     this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "none");
     this.r2.setStyle(this.closeLayerElement.nativeElement, "display", "");
+
     this.r2.setStyle(this.pcProfileElement.nativeElement, "display", "");
     this.r2.setStyle(this.mobileProfileElement.nativeElement, "display", "");
   }
 
-  public clickSaeul() {}
+  public clickSaeul() {
+    this.clickSaeulFlag = !this.clickSaeulFlag;
+    this.clickCloseLayer();
+    this.r2.addClass(this.promotionMainElement.nativeElement, "saeul");
+    this.r2.addClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "none");
+    this.r2.setStyle(this.closeLayerElement.nativeElement, "display", "");
 
-  public clickItem() {}
+    this.r2.setStyle(this.locationElement.nativeElement, "display", "");
+  }
+
+  public clickItem() {
+    this.clickItemFlag = !this.clickItemFlag;
+    this.clickCloseLayer();
+    this.r2.addClass(this.promotionMainElement.nativeElement, "saeul");
+    this.r2.addClass(this.itemLinkElement.nativeElement, "on");
+    this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "none");
+    this.r2.setStyle(this.closeLayerElement.nativeElement, "display", "");
+
+    this.r2.setStyle(this.goodsElement.nativeElement, "display", "");
+  }
 
   public init() {
     const container = this.targetElement.nativeElement;
@@ -166,5 +209,14 @@ export class SonghaeComponent implements OnInit {
 
   public render(renderer: any) {
     renderer.render(this.scene, this.camera);
+  }
+
+  public clickProfileBoxLayer() {
+    if (this.clickProfileBoxLayerFlag) {
+      this.r2.removeClass(this.profileBoxLayerElement.nativeElement, "on");
+    } else {
+      this.r2.addClass(this.profileBoxLayerElement.nativeElement, "on");
+    }
+    this.clickProfileBoxLayerFlag = !this.clickProfileBoxLayerFlag;
   }
 }

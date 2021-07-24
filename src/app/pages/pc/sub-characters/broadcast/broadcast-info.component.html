@@ -1,45 +1,47 @@
-<div class="promotion-broadcast">
-  <div class="promotion-broadcast-img">
-      <img src="../../../../../assets/images/promotion/img_tv.png">
-  </div>
-  <div class="promotion-broadcast-box">
-      <ul class="broadcast-list">
-          <!--[D] 활성화시 : on클래스 추가-->
-          <li class="broadcast-item on" #broadcastItem1 (click)="clickTab(true)"><button type="button"><span class="blind">주요정보</span></button></li>
-          <li class="broadcast-item" #broadcastItem2 (click)="clickTab(false)"><button type="button"><span class="blind">방송소개</span></button></li>
-      </ul>
-      <div class="broadcast-content">
-          <!--[D] 주요정보 탭 클릭시 노출 style="display: block;"-->
-          <div class="broadcast-content-box" #broadcastContent1>
-              <dl class="broadcast-dl">
-                  <div class="broadcast-dl-box">
-                      <dt class="title">편성채널</dt>
-                      <dd class="text">MNET</dd>
-                  </div>
-                  <div class="broadcast-dl-box">
-                      <dt class="title">방영시간</dt>
-                      <dd class="text">(금) 오후 6시</dd>
-                  </div>
-                  <div class="broadcast-dl-box">
-                      <dt class="title">방영기간</dt>
-                      <dd class="text">2021.8.26 ~</dd>
-                  </div>
-                  <div class="broadcast-dl-box">
-                      <dt class="title">제작진</dt>
-                      <dd class="text">김세오, 권형구, 최형인, 최용호</dd>
-                  </div>
-                  <div class="broadcast-dl-box">
-                      <dt class="title">시청연령</dt>
-                      <dd class="text">15세</dd>
-                  </div>
-              </dl>
-          </div>
-          <!--[D] 방송소개 탭 클릭시 노출 style="display: block;"-->
-          <div class="broadcast-content-box" style="display: none;" #broadcastContent2>
-              <p>
-                  [계획대로 by 마미손] 부캐들이 태어나고 있는 요즘, 페르소나 행성에서 날아온 최초의 외계 버라이어티. 5 분파의 부캐들이 함께 미션을 하는 것이 특징이다. 특히 이 프로그램은 예능의 많은 요소 중 오로지 ‘행복’에 집중한다.
-              </p>
-          </div>
-      </div>
-  </div>
+<div class="promotion-main">
+    <div class="promotion-broadcast">
+    <div class="promotion-broadcast-img">
+        <img src="../../../../../assets/images/promotion/img_tv.png">
+    </div>
+    <div class="promotion-broadcast-box">
+        <ul class="broadcast-list">
+            <!--[D] 활성화시 : on클래스 추가-->
+            <li class="broadcast-item on" #broadcastItem1 (click)="clickTab(true)"><button type="button"><span class="blind">주요정보</span></button></li>
+            <li class="broadcast-item" #broadcastItem2 (click)="clickTab(false)"><button type="button"><span class="blind">방송소개</span></button></li>
+        </ul>
+        <div class="broadcast-content">
+            <!--[D] 주요정보 탭 클릭시 노출 style="display: block;"-->
+            <div class="broadcast-content-box" #broadcastContent1>
+                <dl class="broadcast-dl">
+                    <div class="broadcast-dl-box">
+                        <dt class="title">편성채널</dt>
+                        <dd class="text">MNET</dd>
+                    </div>
+                    <div class="broadcast-dl-box">
+                        <dt class="title">방영시간</dt>
+                        <dd class="text">(금) 오후 6시</dd>
+                    </div>
+                    <div class="broadcast-dl-box">
+                        <dt class="title">방영기간</dt>
+                        <dd class="text">2021.8.26 ~</dd>
+                    </div>
+                    <div class="broadcast-dl-box">
+                        <dt class="title">제작진</dt>
+                        <dd class="text">김세오, 권형구, 최형인, 최용호</dd>
+                    </div>
+                    <div class="broadcast-dl-box">
+                        <dt class="title">시청연령</dt>
+                        <dd class="text">15세</dd>
+                    </div>
+                </dl>
+            </div>
+            <!--[D] 방송소개 탭 클릭시 노출 style="display: block;"-->
+            <div class="broadcast-content-box" style="display: none;" #broadcastContent2>
+                <p>
+                    [계획대로 by 마미손] 부캐들이 태어나고 있는 요즘, 페르소나 행성에서 날아온 최초의 외계 버라이어티. 5 분파의 부캐들이 함께 미션을 하는 것이 특징이다. 특히 이 프로그램은 예능의 많은 요소 중 오로지 ‘행복’에 집중한다.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
 </div>

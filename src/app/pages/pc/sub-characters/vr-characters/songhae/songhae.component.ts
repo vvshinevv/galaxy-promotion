@@ -56,8 +56,10 @@ export class SonghaeComponent implements OnInit {
   }
 
   public removeLoading() {
+    //this.r2.setStyle(this.loadingElement.nativeElement, "display", "");
     setTimeout(() => {
       this.r2.setStyle(this.loadingElement.nativeElement, "display", "none");
+      console.log("ab");
     }, 5000);
   }
 
@@ -240,9 +242,7 @@ export class SonghaeComponent implements OnInit {
   public onWindowResize(renderer: any) {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
-    console.log(this.camera.position);
     this.renderer.setSize(window.innerWidth, window.innerHeight);
-
     this.render(renderer);
   }
 

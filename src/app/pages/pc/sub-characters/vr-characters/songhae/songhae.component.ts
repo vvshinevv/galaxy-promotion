@@ -59,7 +59,7 @@ export class SonghaeComponent implements OnInit {
     //this.r2.setStyle(this.loadingElement.nativeElement, "display", "");
     setTimeout(() => {
       this.r2.setStyle(this.loadingElement.nativeElement, "display", "none");
-    }, 10000);
+    }, 7500);
   }
 
   public initSwiper() {

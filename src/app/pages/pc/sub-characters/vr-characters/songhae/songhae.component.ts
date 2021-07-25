@@ -12,7 +12,6 @@ import { KTX2Loader } from "../../../../../../assets/jsm/loaders/KTX2Loader.js";
 import { MeshoptDecoder } from "../../../../../../assets/jsm/libs/meshopt_decoder.module.js";
 import * as THREE from "three";
 import Swiper from "swiper";
-import { ConsoleReporter } from "jasmine";
 
 @Component({
   selector: "app-songhae",

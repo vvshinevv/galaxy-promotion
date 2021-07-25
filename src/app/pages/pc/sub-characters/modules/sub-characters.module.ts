@@ -16,6 +16,7 @@ const routes: Routes = [
       { path: "broadcast", component: BroadcastInfoComponent },
       { path: "personaplanet", component: PersonaPlanetInfoComponent },
       { path: "songhae", component: SonghaeComponent },
+      { path: "mommyson", component: MommysonComponent },
       { path: "", component: SubCharactersMainComponent },
     ],
   },

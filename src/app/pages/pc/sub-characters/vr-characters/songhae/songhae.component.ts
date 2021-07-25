@@ -56,10 +56,10 @@ export class SonghaeComponent implements OnInit {
   }
 
   public removeLoading() {
-    //this.r2.setStyle(this.loadingElement.nativeElement, "display", "");
+    this.r2.setStyle(this.loadingElement.nativeElement, "display", "");
     setTimeout(() => {
       this.r2.setStyle(this.loadingElement.nativeElement, "display", "none");
-    }, 7500);
+    }, 3000);
   }
 
   public initSwiper() {
@@ -164,9 +164,9 @@ export class SonghaeComponent implements OnInit {
       45,
       window.innerWidth / window.innerHeight,
       1,
-      3000
+      2000
     );
-    this.camera.position.set(741.1081057423162, -43.73270090165431, 190.44122490001917);
+    this.camera.position.set(1157.810224274296, 66.57923181043022, -95.20418754415628);
 
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
@@ -179,7 +179,7 @@ export class SonghaeComponent implements OnInit {
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "../../../../../../assets/models/gltf/songhae_background.png"
+        "../../../../../../assets/models/gltf/songhae_background1.jpeg"
       ),
     });
     let mesh = new THREE.Mesh(geometry, material);
@@ -194,35 +194,14 @@ export class SonghaeComponent implements OnInit {
     );
     loader.setKTX2Loader(ktx2Loader);
     loader.setMeshoptDecoder(MeshoptDecoder);
-    loader.load("songhae.glb", (gltf: any) => {
-      gltf.scene.position.x = 90;
-      gltf.scene.position.z = -60;
-      gltf.scene.position.y = -116;
-      gltf.scene.rotation.y += 0.65;
-      this.scene.add(gltf.scene);
-      this.render(this.renderer);
-    });
+    loader.load("songhae_with_stage.glb", (gltf: any) => {     
+      gltf.scene.position.x = 800;
+      gltf.scene.position.y = -400;
+      gltf.scene.position.z = -150;
+      gltf.scene.rotation.y += 1.8;
 
-    loader.load("bentley.glb", (gltf: any) => {
-      gltf.scene.position.x = 60;
-      gltf.scene.position.y = -116;
-      gltf.scene.position.z = 70;
-      gltf.scene.rotation.y += 0.65;
-      const mesh = gltf.scene.children[2];
-      mesh.scale.set(60, 60, 60);
-
-      var meshToRotate = new THREE.Mesh(geometry, material);
-      meshToRotate.rotateZ(Math.PI / 2);
-      gltf.scene.rotation.y += 0.65;
-      this.scene.add(gltf.scene);
-      this.render(this.renderer);
-    });
-
-    loader.load("songhea_stage2.glb", (gltf: any) => {
-      gltf.scene.position.y = -250;
-      gltf.scene.position.x = 550;
-      gltf.scene.position.z = 250;
-      gltf.scene.rotation.y += -5;
+      const mesh = gltf.scenes[0];
+      mesh.scale.set(72, 72, 72);
       this.scene.add(gltf.scene);
       this.render(this.renderer);
     });
@@ -231,10 +210,9 @@ export class SonghaeComponent implements OnInit {
     controls.addEventListener("change", () => {
       this.render(this.renderer);
     }); // use if there is no animation loop
-    controls.minDistance = 500;
-    controls.maxDistance = 850;
+    controls.minDistance = 1000;
+    controls.maxDistance = 1200;
     controls.maxPolarAngle = Math.PI / 2 + 0.3;
-    controls.target.set(120, 120, 120);
     controls.update();
     window.addEventListener("resize", () => this.onWindowResize(this.renderer));
   }
@@ -247,7 +225,6 @@ export class SonghaeComponent implements OnInit {
   }
 
   public render(renderer: any) {
-    renderer.toneMappingExposure = Math.pow(0.56, 3.5);
     renderer.render(this.scene, this.camera);
   }
 

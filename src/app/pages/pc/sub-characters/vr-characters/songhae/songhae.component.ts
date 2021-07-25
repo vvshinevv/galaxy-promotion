@@ -166,7 +166,7 @@ export class SonghaeComponent implements OnInit {
       1,
       3000
     );
-    this.camera.position.set(1110, -15, 150);
+    this.camera.position.set(741.1081057423162, -43.73270090165431, 190.44122490001917);
 
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
@@ -175,7 +175,7 @@ export class SonghaeComponent implements OnInit {
     this.scene.background = new THREE.Color(0xbbbbbb);
     this.scene.environment = pmremGenerator.fromScene(environment).texture;
 
-    var geometry = new THREE.SphereGeometry(900, 70, 50);
+    var geometry = new THREE.SphereGeometry(800, 120, 60);
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
@@ -195,7 +195,8 @@ export class SonghaeComponent implements OnInit {
     loader.setKTX2Loader(ktx2Loader);
     loader.setMeshoptDecoder(MeshoptDecoder);
     loader.load("songhae.glb", (gltf: any) => {
-      gltf.scene.position.x = 150;
+      gltf.scene.position.x = 90;
+      gltf.scene.position.z = -60;
       gltf.scene.position.y = -116;
       gltf.scene.rotation.y += 0.65;
       this.scene.add(gltf.scene);
@@ -203,9 +204,9 @@ export class SonghaeComponent implements OnInit {
     });
 
     loader.load("bentley.glb", (gltf: any) => {
-      gltf.scene.position.x = 155;
+      gltf.scene.position.x = 60;
       gltf.scene.position.y = -116;
-      gltf.scene.position.z = 120;
+      gltf.scene.position.z = 70;
       gltf.scene.rotation.y += 0.65;
       const mesh = gltf.scene.children[2];
       mesh.scale.set(60, 60, 60);
@@ -219,8 +220,8 @@ export class SonghaeComponent implements OnInit {
 
     loader.load("songhea_stage2.glb", (gltf: any) => {
       gltf.scene.position.y = -250;
-      gltf.scene.position.x = 630;
-      gltf.scene.position.z = 330;
+      gltf.scene.position.x = 550;
+      gltf.scene.position.z = 250;
       gltf.scene.rotation.y += -5;
       this.scene.add(gltf.scene);
       this.render(this.renderer);
@@ -230,8 +231,8 @@ export class SonghaeComponent implements OnInit {
     controls.addEventListener("change", () => {
       this.render(this.renderer);
     }); // use if there is no animation loop
-    controls.minDistance = 400;
-    controls.maxDistance = 900;
+    controls.minDistance = 500;
+    controls.maxDistance = 850;
     controls.maxPolarAngle = Math.PI / 2 + 0.3;
     controls.target.set(120, 120, 120);
     controls.update();
@@ -246,7 +247,7 @@ export class SonghaeComponent implements OnInit {
   }
 
   public render(renderer: any) {
-    renderer.toneMappingExposure = Math.pow(0.86, 6.0);
+    renderer.toneMappingExposure = Math.pow(0.56, 3.5);
     renderer.render(this.scene, this.camera);
   }
 

@@ -56,10 +56,10 @@ export class MommysonComponent implements OnInit {
   }
 
   public removeLoading() {
-    //this.r2.setStyle(this.loadingElement.nativeElement, "display", "");
-    // setTimeout(() => {
-    //   this.r2.setStyle(this.loadingElement.nativeElement, "display", "none");
-    // }, 7500);
+    this.r2.setStyle(this.loadingElement.nativeElement, "display", "");
+    setTimeout(() => {
+      this.r2.setStyle(this.loadingElement.nativeElement, "display", "none");
+    }, 2500);
   }
 
   public initSwiper() {

@@ -195,13 +195,13 @@ export class SonghaeComponent implements OnInit {
     loader.setKTX2Loader(ktx2Loader);
     loader.setMeshoptDecoder(MeshoptDecoder);
     loader.load("songhae_with_stage.glb", (gltf: any) => {     
-      gltf.scene.position.x = 1000;
+      gltf.scene.position.x = 800;
       gltf.scene.position.y = -400;
-      gltf.scene.position.z = -300;
+      gltf.scene.position.z = -150;
       gltf.scene.rotation.y += 1.8;
 
       const mesh = gltf.scenes[0];
-      mesh.scale.set(80, 80, 80);
+      mesh.scale.set(72, 72, 72);
       this.scene.add(gltf.scene);
       this.render(this.renderer);
     });

@@ -175,7 +175,7 @@ export class MommysonComponent implements OnInit {
     this.scene.background = new THREE.Color(0xbbbbbb);
     this.scene.environment = pmremGenerator.fromScene(environment).texture;
 
-    var geometry = new THREE.SphereGeometry( 800, 260, 140 );
+    var geometry = new THREE.SphereGeometry( 600, 60, 90 );
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
@@ -209,9 +209,10 @@ export class MommysonComponent implements OnInit {
       this.render(this.renderer);
     }); // use if there is no animation loop
     controls.minDistance = 250;
-    controls.maxDistance = 800;
+    controls.maxDistance = 700;
     controls.maxPolarAngle = Math.PI / 2 + 0.3;
     controls.target.set(0, 120, 0);
+    
     
     controls.update();
     window.addEventListener("resize", () => this.onWindowResize(this.renderer));
@@ -225,7 +226,7 @@ export class MommysonComponent implements OnInit {
   }
 
   public render(renderer: any) {
-    console.log(this.camera.position);
+    renderer.toneMappingExposure = Math.pow(0.66, 5);
     renderer.render(this.scene, this.camera);
   }
 

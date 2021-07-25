@@ -179,7 +179,7 @@ export class SonghaeComponent implements OnInit {
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "../../../../../../assets/models/gltf/songhae_background.png"
+        "../../../../../../assets/models/gltf/songhae_background1.jpeg"
       ),
     });
     let mesh = new THREE.Mesh(geometry, material);
@@ -225,7 +225,6 @@ export class SonghaeComponent implements OnInit {
   }
 
   public render(renderer: any) {
-    console.log(this.camera.position);
     renderer.render(this.scene, this.camera);
   }
 

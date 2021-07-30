@@ -9,6 +9,7 @@ import { Component, OnInit } from "@angular/core";
 export class SubCharactersLayoutComponent implements OnInit {
   @ViewChild("pMenu") pMenuElement: ElementRef;
   @ViewChild("mMenu") mMenuElement: ElementRef;
+  @ViewChild("promotionContainer") promotionContainerElement: ElementRef;
 
   menuFlag: boolean = false;
 

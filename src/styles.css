@@ -2122,7 +2122,7 @@ body {
         min-width: 147px;
         top: auto;
         left: 40px;
-        bottom: 21px;
+        bottom: 40px;
         transform: none;
         transform: none;
     }
@@ -2275,7 +2275,7 @@ body {
     .promotion-profile-box-mo {
         display: block;
         position: absolute;
-        top: 22px;
+        top: 180px;
         left: 0;
         right: 0;
         width: calc(100% - 136px);
@@ -2296,7 +2296,7 @@ body {
     }
     .promotion-profile-box-mo .swiper-button-prev,
     .promotion-profile-box-mo .swiper-button-next {
-        top: 83px;
+        top: -50px;
         left: auto;
         right: -56px;
         content: "";
@@ -2561,12 +2561,12 @@ body {
 }
 
 .intro .promotion-header {
-    background-color: transparent;
+    background-color: black;
 }
 
 @media (max-width: 824px) {
     .intro .promotion-header {
-        background-color: #000;
+        background-color: black;
     }
     .intro .promotion-header .promotion-item:nth-child(6) {
         display: block !important;
@@ -2580,7 +2580,7 @@ body {
 @media (max-width: 824px) {
     .intro .promotion-main.p1,
     .intro .promotion-main.p2 {
-        position: fixed;
+        position: fixed; 
         top: 0;
         left: 0;
         bottom: 0;
@@ -2639,7 +2639,7 @@ body {
 
 @media (max-width: 824px) {
     .intro .person-1 {
-        top: 31px;
+        top: 50px;
         margin-left: -164px;
         width: 200px;
         height: 250px;

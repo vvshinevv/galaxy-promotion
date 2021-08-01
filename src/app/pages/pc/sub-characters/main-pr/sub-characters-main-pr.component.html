@@ -1,4 +1,4 @@
-<div class="promotion-main">
+<div class="promotion-main" #promotionContainer>
   <h1 class="blind">부캐시대 2021년 9월 26일 오픈</h1>
   <!--활성화배경-->
   <div class="bg-1"></div>
@@ -11,7 +11,7 @@
       <div class="c-r"></div>
       <div class="c-y"></div>
   </div>
-  <a href="/mommyson" class="person-1"><span class="blind">마미손</span></a>
-  <a href="/songhae" class="person-2"><span class="blind">플렉숑</span></a>
+  <a href="/mommyson" class="person-1" (mouseenter)="mouseHover('person1')" (mouseleave)="mouseLeave('person1')"><span class="blind">마미손</span></a>
+  <a href="/songhae" class="person-2" (mouseenter)="mouseHover('person2')" (mouseleave)="mouseLeave('person2')"><span class="blind">플렉숑</span></a>
   <a href="/intro" class="title-intro"><span class="blind">부캐시대란?</span></a>
 </div>

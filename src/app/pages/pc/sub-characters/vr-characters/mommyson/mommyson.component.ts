@@ -40,6 +40,7 @@ export class MommysonComponent implements OnInit {
   spotLight: any;
   swiper1: any;
   swiper2: any;
+  swiper3: any;
 
   clickProfileBoxLayerFlag: boolean = false;
   clickProfileFlag: boolean = false;
@@ -81,7 +82,19 @@ export class MommysonComponent implements OnInit {
 
     this.swiper2 = new Swiper(".swiper2", {
       slidesPerView: 1,
-      spaceBetween: 72,
+      spaceBetween: 0,
+      direction: "horizontal",
+      loop: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    this.swiper3 = new Swiper(".swiper3", {
+      slidesPerView: 1,
+      spaceBetween: 0,
       direction: "horizontal",
       loop: true,
 

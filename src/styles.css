@@ -1206,7 +1206,10 @@ body {
 
 @media (max-width: 1024px) {
     .promotion-header {
-        padding: 0 38px 0 40px;
+        /* padding: 0 38px 0 40px; */
+        padding: 0;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -2184,6 +2187,7 @@ body {
 
 .promotion-profile-box {
     position: relative;
+    top: 40px
 }
 
 @media (max-width: 1024px) {
@@ -2607,7 +2611,7 @@ body {
 @media (max-width: 824px) {
     .intro .person-1 {
         top: 90px;
-        margin-left: -206px;
+        margin-left: -201px;
         width: 240px;
         height: 300px;
         background-size: 240px auto;

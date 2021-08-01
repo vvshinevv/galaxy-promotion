@@ -908,15 +908,10 @@ body {
 .sp-promotion-close_yellow,
 .type3 .promotion-vr .btn-close-vr,
 .sp-promotion-img_saeul_blue,
-.type5 .locate-saeul::after,
 .sp-promotion-img_saeul_green,
-.type2 .locate-saeul::after,
 .sp-promotion-img_saeul_purple,
-.type4 .locate-saeul::after,
 .sp-promotion-img_saeul_red,
-.type1 .locate-saeul::after,
 .sp-promotion-img_saeul_yellow,
-.type3 .locate-saeul::after,
 .sp-promotion-insta,
 .promotion-item-link.insta,
 .sp-promotion-item_blue,
@@ -961,7 +956,7 @@ body {
 .type3 .promotion-vr .promotion-vr-box,
 .sp-promotion-youtube,
 .promotion-item-link.youtube {
-    background-image: url("assets/images/sprite/promotion.png");
+    background-image: url("assets/images/sprite/promotion.png?v=2b1c0008");
 }
 
 .sp-promotion-close_blue,
@@ -999,36 +994,31 @@ body {
     background-position: -1045px -416px;
 }
 
-.sp-promotion-img_saeul_blue,
-.type5 .locate-saeul::after {
+.sp-promotion-img_saeul_blue {
     width: 438px;
     height: 409px;
     background-position: 0px 0px;
 }
 
-.sp-promotion-img_saeul_green,
-.type2 .locate-saeul::after {
+.sp-promotion-img_saeul_green {
     width: 408px;
     height: 382px;
     background-position: -448px 0px;
 }
 
-.sp-promotion-img_saeul_purple,
-.type4 .locate-saeul::after {
+.sp-promotion-img_saeul_purple {
     width: 357px;
     height: 268px;
     background-position: -277px -759px;
 }
 
-.sp-promotion-img_saeul_red,
-.type1 .locate-saeul::after {
+.sp-promotion-img_saeul_red {
     width: 331px;
     height: 330px;
     background-position: -347px -419px;
 }
 
-.sp-promotion-img_saeul_yellow,
-.type3 .locate-saeul::after {
+.sp-promotion-img_saeul_yellow {
     width: 337px;
     height: 330px;
     background-position: 0px -419px;
@@ -1378,10 +1368,11 @@ body {
 
 .promotion-item-link.logo {
     display: inline-block;
-    width: 290px;
+    width: 490px;
     height: 93px;
     background: url(assets/images/promotion/title.png) no-repeat center;
     background-size: cover;
+    margin-top: -4px;
 }
 
 .type1 .promotion-item-link.logo {
@@ -1411,24 +1402,25 @@ body {
 
 @media (max-width: 1024px) {
     .promotion-item-link.logo {
-        width: 80px !important;
-        height: 40px !important;
-        background: url(assets/images/promotion/title.png) no-repeat center center/160px auto;
+        width: 120px !important;
+        height: 46.5px !important;
+        margin-top: 5px;
+        background: url(assets/images/promotion/title.png) no-repeat center center/220px auto;
     }
     .type1 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_red.png) no-repeat center center/160px auto;
+        background: url(assets/images/promotion/title_red.png) no-repeat center center/220px auto;
     }
     .type2 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_green.png) no-repeat center center/160px auto;
+        background: url(assets/images/promotion/title_green.png) no-repeat center center/220px auto;
     }
     .type3 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_yellow.png) no-repeat center center/160px auto;
+        background: url(assets/images/promotion/title_yellow.png) no-repeat center center/220px auto;
     }
     .type4 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_purple.png) no-repeat center center/160px auto;
+        background: url(assets/images/promotion/title_purple.png) no-repeat center center/220px auto;
     }
     .type5 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_blue.png) no-repeat center center/160px auto;
+        background: url(assets/images/promotion/title_blue.png) no-repeat center center/220px auto;
     }
 }
 
@@ -1563,7 +1555,7 @@ body {
 }
 
 .type1 .promotion-vr {
-    background: url(assets/images/promotion/background_red.png) no-repeat center center/cover;
+    /* background: url(assets/images/promotion/background_red.png) no-repeat center center/cover; */
 }
 
 @media (max-width: 1024px) {
@@ -1596,7 +1588,7 @@ body {
     .type2 .promotion-vr .promotion-vr-item.profile {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/g_profile.png) no-repeat center center/24px 34px;
+        background: url(assets/images/promotion/g_item.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1604,7 +1596,7 @@ body {
     .type2 .promotion-vr .promotion-vr-item.location {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/g_saeul.png) no-repeat center center/24px 34px;
+        background: url(assets/images/promotion/g_item.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -2076,7 +2068,7 @@ body {
 
 .locate-title {
     position: absolute;
-    top: 120px;
+    top: 64px;
     left: 50%;
     bottom: 0;
     z-index: 10;
@@ -2122,7 +2114,7 @@ body {
         min-width: 147px;
         top: auto;
         left: 40px;
-        bottom: 40px;
+        bottom: 21px;
         transform: none;
         transform: none;
     }
@@ -2157,21 +2149,12 @@ body {
 
 .locate-saeul {
     position: absolute;
-    top: 120px;
+    top: 110px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 8;
     width: 824px;
     height: 663px;
-    background: url(assets/images/promotion/img_locate_saeul.png) no-repeat 0 0;
-}
-
-.locate-saeul::after {
-    content: "";
-    position: absolute;
-    top: 106px;
-    left: 173px;
-    animation: blink-animation 0.5s step-end infinite;
 }
 
 @media (max-width: 800px) {
@@ -2185,38 +2168,12 @@ body {
     }
 }
 
-.type1 .locate-saeul::after {
-    content: "";
-    position: absolute;
-    top: 106px;
-    left: 173px;
+.type1 .locate-saeul {
+    background: url(assets/images/promotion/img_locate_saeul_r.png) no-repeat 0 0;
 }
 
-.type2 .locate-saeul::after {
-    content: "";
-    left: auto;
-    top: auto;
-    right: 0;
-    bottom: 0;
-}
-
-.type3 .locate-saeul::after {
-    content: "";
-    top: 0;
-    left: 351px;
-}
-
-.type4 .locate-saeul::after {
-    content: "";
-    top: 211px;
-    left: auto;
-    right: 132px;
-}
-
-.type5 .locate-saeul::after {
-    content: "";
-    top: 228px;
-    left: 0;
+.type2 .locate-saeul {
+    background: url(assets/images/promotion/img_locate_saeul_g.png) no-repeat 0 0;
 }
 
 @keyframes blink-animation {
@@ -2227,7 +2184,6 @@ body {
 
 .promotion-profile-box {
     position: relative;
-    margin-top: 120px;
 }
 
 @media (max-width: 1024px) {
@@ -2276,7 +2232,7 @@ body {
     .promotion-profile-box-mo {
         display: block;
         position: absolute;
-        top: 180px;
+        top: 22px;
         left: 0;
         right: 0;
         width: calc(100% - 136px);
@@ -2297,7 +2253,7 @@ body {
     }
     .promotion-profile-box-mo .swiper-button-prev,
     .promotion-profile-box-mo .swiper-button-next {
-        top: -50px;
+        top: 83px;
         left: auto;
         right: -56px;
         content: "";
@@ -2562,12 +2518,12 @@ body {
 }
 
 .intro .promotion-header {
-    background-color: black;
+    background-color: #000;
 }
 
 @media (max-width: 824px) {
     .intro .promotion-header {
-        background-color: black;
+        background-color: #000;
     }
     .intro .promotion-header .promotion-item:nth-child(6) {
         display: block !important;
@@ -2581,7 +2537,7 @@ body {
 @media (max-width: 824px) {
     .intro .promotion-main.p1,
     .intro .promotion-main.p2 {
-        position: fixed; 
+        position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
@@ -2600,31 +2556,41 @@ body {
 }
 
 .intro .bg-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding-top: 93px;
     height: 100%;
     background: url(assets/images/promotion/bg_intro.png) center 0 no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 824px) {
     .intro .bg-1 {
         padding-top: 46.5px;
         background: url(assets/images/promotion/bg_intro_m.png) center 46.5px no-repeat;
-        background-size: cover;
     }
 }
 
 .intro .bg-2 {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding-top: 93px;
     height: 100%;
     background: url(assets/images/promotion/bg_intro2.png) center 0 no-repeat;
+    background-size: cover;
 }
 
 @media (max-width: 824px) {
     .intro .bg-2 {
         padding-top: 46.5px;
         background: url(assets/images/promotion/bg_intro2_m.png) center 46.5px no-repeat;
-        background-size: cover;
     }
 }
 
@@ -2640,11 +2606,11 @@ body {
 
 @media (max-width: 824px) {
     .intro .person-1 {
-        top: 50px;
-        margin-left: -164px;
-        width: 200px;
-        height: 250px;
-        background-size: 200px auto;
+        top: 90px;
+        margin-left: -206px;
+        width: 240px;
+        height: 300px;
+        background-size: 240px auto;
     }
 }
 
@@ -2660,11 +2626,11 @@ body {
 
 @media (max-width: 824px) {
     .intro .person-2 {
-        top: 125px;
+        top: 180px;
         margin-left: -31px;
-        width: 200px;
-        height: 250px;
-        background-size: 200px auto;
+        width: 240px;
+        height: 300px;
+        background-size: 240px auto;
     }
 }
 
@@ -2681,7 +2647,7 @@ body {
 @media (max-width: 824px) {
     .intro .title-intro {
         top: auto;
-        bottom: 40px;
+        bottom: -35px;
         margin-left: -100px;
         width: 200px;
         height: 142.5px;
@@ -2703,7 +2669,7 @@ body {
 
 @media (max-width: 824px) {
     .intro .p1 .person-2 {
-        background-size: 200px auto;
+        background-size: 240px auto;
     }
 }
 
@@ -2721,7 +2687,7 @@ body {
 
 @media (max-width: 824px) {
     .intro .p2 .person-1 {
-        background-size: 200px auto;
+        background-size: 240px auto;
     }
 }
 

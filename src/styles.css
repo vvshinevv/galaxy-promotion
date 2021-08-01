@@ -1563,11 +1563,17 @@ body {
 }
 
 @media (max-width: 1024px) {
+    .type1 .promotion-vr {
+        /* background: url(assets/images/promotion/r_bg.png) no-repeat center center/cover; */
+        background-color: black;
+    }
+}
+
+@media (max-width: 1024px) {
     .type1 .promotion-vr .promotion-vr-box {
         width: 55.5px;
         height: 146px;
-        /* background: url(assets/images/promotion/r_bar.png) no-repeat center center/55.5px 146px; */
-        background-color: black;
+        background: url(assets/images/promotion/r_bar.png) no-repeat center center/55.5px 146px;
     }
 }
 

@@ -1791,7 +1791,7 @@ body {
     .promotion-vr .btn-prev {
         top: 52px;
         left: 40px;
-        transform: scale(50%);
+        transform: scale(40%);
     }
 }
 
@@ -1913,6 +1913,7 @@ body {
 
 @media (max-width: 1024px) {
     .promotion-vr-goods {
+        top: 50%;
         width: 100%;
         height: auto;
     }
@@ -2162,13 +2163,13 @@ body {
 
 @media (max-width: 800px) {
     .locate-saeul {
-        top: -89px;
-        transform: translateX(-45%) scale(59%);
+        top: -130px;
+        transform: translateX(-50%) scale(38%);
     }
-    .type2 .locate-saeul {
+    /* .type2 .locate-saeul {
         top: -180px;
         transform: translateX(-64%) scale(60%);
-    }
+    } */
 }
 
 .type1 .locate-saeul {
@@ -2257,9 +2258,8 @@ body {
     }
     .promotion-profile-box-mo .swiper-button-prev,
     .promotion-profile-box-mo .swiper-button-next {
-        top: -150px;
         left: auto;
-        right: -56px;
+        right: -20px;
         content: "";
         width: 25px;
         height: 23px;
@@ -2536,6 +2536,10 @@ body {
 
 .intro .promotion-main {
     padding-top: 0;
+}
+
+.promotion.intro {
+    overflow: hidden;
 }
 
 @media (max-width: 824px) {

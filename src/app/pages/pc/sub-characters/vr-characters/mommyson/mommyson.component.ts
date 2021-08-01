@@ -195,8 +195,7 @@ export class MommysonComponent implements OnInit {
       1,
       2000
     );
-    this.camera.position.set(687.2454004363664, -127.87888351205737, 36.61626320049812);
-
+    this.camera.position.set(692.4562032628827, -104.91887294369447, 38.59507801616651);
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
     this.scene = new THREE.Scene();
@@ -210,6 +209,7 @@ export class MommysonComponent implements OnInit {
         "../../../../../../assets/models/gltf/mommyson_background_final.jpeg"
       ),
     });
+
     let mesh = new THREE.Mesh(geometry, material);
     this.scene.add(mesh);
 
@@ -232,19 +232,20 @@ export class MommysonComponent implements OnInit {
       mesh.scale.set(100, 100, 100);
       gltf.scene.rotation.y += 1.5;
 
-
       this.scene.add(gltf.scene);
       this.render(this.renderer);
     });
+    
 
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
     controls.addEventListener("change", () => {
       this.render(this.renderer);
     }); // use if there is no animation loop
-    controls.minDistance = 200;
+    controls.minDistance = 700;
     controls.maxDistance = 700;
     controls.maxPolarAngle = Math.PI / 2 + 0.3;
     //controls.target.set(0, 120, 0);
+    
     controls.update();
     window.addEventListener("resize", () => this.onWindowResize(this.renderer));
   }
@@ -258,6 +259,7 @@ export class MommysonComponent implements OnInit {
   }
 
   public render(renderer: any) {
+    console.log(this.camera.position);
     renderer.toneMappingExposure = Math.pow(0.66, 1);
     renderer.render(this.scene, this.camera);
   }

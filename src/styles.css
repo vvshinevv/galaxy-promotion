@@ -1617,7 +1617,7 @@ body {
     .type2 .promotion-vr .promotion-vr-item.profile {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/g_item.png) no-repeat center center/24px 34px;
+        background: url(assets/images/promotion/g_profile.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1625,7 +1625,7 @@ body {
     .type2 .promotion-vr .promotion-vr-item.location {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/g_item.png) no-repeat center center/24px 34px;
+        background: url(assets/images/promotion/g_saeul.png) no-repeat center center/24px 34px;
     }
 }
 

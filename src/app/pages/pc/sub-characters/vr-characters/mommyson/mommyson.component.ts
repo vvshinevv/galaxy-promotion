@@ -195,7 +195,8 @@ export class MommysonComponent implements OnInit {
       1,
       2000
     );
-    this.camera.position.set(692.4562032628827, -104.91887294369447, 38.59507801616651);
+    this.camera.position.set(687.2454004363664, -127.87888351205737, 36.61626320049812);
+
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
     this.scene = new THREE.Scene();

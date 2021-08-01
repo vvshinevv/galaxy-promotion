@@ -2237,14 +2237,15 @@ body {
     .promotion-profile-box-mo {
         display: block;
         position: absolute;
-        top: 35%;
+        top: 50%;
         left: 0;
         right: 0;
-        width: calc(100% - 136px);
-        margin-left: 40px;
-        margin-right: 96px;
-        padding-top: 148%;
+        width: calc(100% - 80px);
+        margin-left: 20px;
+        margin-right: 60px;
+        padding-top: 110%;
         z-index: 6;
+        transform: translateY(-50%);
     }
     .promotion-profile-box-mo .swiper-container {
         position: absolute;
@@ -2258,6 +2259,7 @@ body {
     }
     .promotion-profile-box-mo .swiper-button-prev,
     .promotion-profile-box-mo .swiper-button-next {
+        top: -70px;
         left: auto;
         right: -20px;
         content: "";

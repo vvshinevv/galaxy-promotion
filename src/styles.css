@@ -1558,24 +1558,28 @@ body {
 }
 
 .type1 .promotion-vr {
-    background: url(assets/images/promotion/background_red.png) no-repeat center center/cover;
+    /* background: url(assets/images/promotion/background_red.png) no-repeat center center/cover; */
+    background-color: black;
 }
 
 @media (max-width: 1024px) {
     .type1 .promotion-vr .promotion-vr-box {
         width: 55.5px;
         height: 146px;
-        background: url(assets/images/promotion/r_bar.png) no-repeat center center/55.5px 146px;
+        /* background: url(assets/images/promotion/r_bar.png) no-repeat center center/55.5px 146px; */
+        background-color: black;
     }
 }
 
 .type2 .promotion-vr {
-    background: url(assets/images/promotion/background_green.png) no-repeat center center/cover;
+    /* background: url(assets/images/promotion/background_green.png) no-repeat center center/cover; */
+    background-color: black;
 }
 
 @media (max-width: 1024px) {
     .type2 .promotion-vr {
-        background: url(assets/images/promotion/g_bg.png) no-repeat center center/cover;
+        /* background: url(assets/images/promotion/g_bg.png) no-repeat center center/cover; */
+        background-color: black;
     }
 }
 

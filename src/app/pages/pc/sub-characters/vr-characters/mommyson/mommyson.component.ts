@@ -98,9 +98,10 @@ export class MommysonComponent implements OnInit {
     this.r2.removeClass(this.promotionMainElement.nativeElement, "profile");
     this.r2.removeClass(this.promotionMainElement.nativeElement, "saeul");
     this.r2.removeClass(this.promotionMainElement.nativeElement, "item");
-    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
-    this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
-    this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
+
+    this.r2.addClass(this.profileLinkElement.nativeElement, "on");
+    this.r2.addClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.addClass(this.itemLinkElement.nativeElement, "on");
 
     this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "");
     this.r2.setStyle(this.closeLayerElement.nativeElement, "display", "none");
@@ -117,6 +118,11 @@ export class MommysonComponent implements OnInit {
   public clickProfile() {
     this.clickProfileFlag = !this.clickProfileFlag;
     this.clickCloseLayer();
+
+    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
+
     this.r2.addClass(this.promotionMainElement.nativeElement, "profile");
     this.r2.addClass(this.profileLinkElement.nativeElement, "on");
     this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "none");
@@ -129,6 +135,11 @@ export class MommysonComponent implements OnInit {
   public clickSaeul() {
     this.clickSaeulFlag = !this.clickSaeulFlag;
     this.clickCloseLayer();
+
+    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
+
     this.r2.addClass(this.promotionMainElement.nativeElement, "saeul");
     this.r2.addClass(this.locationLinkElement.nativeElement, "on");
     this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "none");
@@ -140,6 +151,11 @@ export class MommysonComponent implements OnInit {
   public clickItem() {
     this.clickItemFlag = !this.clickItemFlag;
     this.clickCloseLayer();
+    
+    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
+
     this.r2.addClass(this.promotionMainElement.nativeElement, "saeul");
     this.r2.addClass(this.itemLinkElement.nativeElement, "on");
     this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "none");
@@ -166,7 +182,7 @@ export class MommysonComponent implements OnInit {
       1,
       2000
     );
-    this.camera.position.set(18.091208339571892, -2.598380858153514, 599.7215658934816);
+    this.camera.position.set(455.93263995891914, -84.83746405233299, 24.29197712466832);
 
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
@@ -178,7 +194,7 @@ export class MommysonComponent implements OnInit {
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "../../../../../../assets/models/gltf/mommyson_background.jpeg"
+        "../../../../../../assets/models/gltf/mommyson_background_final.jpeg"
       ),
     });
     let mesh = new THREE.Mesh(geometry, material);
@@ -195,9 +211,14 @@ export class MommysonComponent implements OnInit {
     loader.setMeshoptDecoder(MeshoptDecoder);
 
     loader.load("mommyson.glb", (gltf: any) => {
-      gltf.scene.position.y = -200;
-      const mesh = gltf.scene.children[2];
-      mesh.scale.set(2, 2, 2);
+      gltf.scene.position.y = -250;
+      gltf.scene.position.x = -11;
+      gltf.scene.position.z = 15;
+
+      const mesh = gltf.scenes[0];
+      mesh.scale.set(100, 100, 100);
+      gltf.scene.rotation.y += 1.5;
+
 
       this.scene.add(gltf.scene);
       this.render(this.renderer);
@@ -207,8 +228,8 @@ export class MommysonComponent implements OnInit {
     controls.addEventListener("change", () => {
       this.render(this.renderer);
     }); // use if there is no animation loop
-    controls.minDistance = 250;
-    controls.maxDistance = 600;
+    controls.minDistance = 200;
+    controls.maxDistance = 700;
     controls.maxPolarAngle = Math.PI / 2 + 0.3;
     //controls.target.set(0, 120, 0);
     controls.update();
@@ -224,7 +245,7 @@ export class MommysonComponent implements OnInit {
   }
 
   public render(renderer: any) {
-    console.log(this.camera.position);
+    renderer.toneMappingExposure = Math.pow(0.66, 1);
     renderer.render(this.scene, this.camera);
   }
 

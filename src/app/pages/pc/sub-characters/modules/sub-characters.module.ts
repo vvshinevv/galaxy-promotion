@@ -12,22 +12,17 @@ import { IntroduceComponent } from '../introduce/introduce.component';
 
 const routes: Routes = [
   {
-    path: "subcharacters",
+    path: "",
     component: SubCharactersLayoutComponent,
     children: [
-      { path: "main", component: SubCharactersMainPrComponent },
       { path: "broadcast", component: BroadcastInfoComponent },
       { path: "personaplanet", component: PersonaPlanetInfoComponent },
       { path: "songhae", component: SonghaeComponent },
       { path: "mommyson", component: MommysonComponent },
       { path: "intro", component: IntroduceComponent },
-      { path: "", component: SubCharactersMainComponent }
+      { path: "", component: SubCharactersMainPrComponent }
     ],
-  },
-  {
-    path: "**",
-    redirectTo: "subcharacters",
-  },
+  }
 ];
 
 @NgModule({

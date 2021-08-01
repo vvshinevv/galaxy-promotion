@@ -1,72 +1,88 @@
-<div class="promotion-main type3" #promotionMain>
+<div class="promotion-main type2" #promotionMain>
     <!-- 부캐릭터 버추얼 공간 페이지 -->
-    <div class="promotion-vr">
-        <h2 class="blind">부캐릭터 버추얼 공간</h2>
-        <a href="/" class="btn-prev" #backToHome><svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="36"><path d="M18.001 36a2 2 0 0 1-1.414-.586L5.67 24.5.587 19.417a2 2 0 0 1 0-2.828L13.656 3.52 16.587.589a2 2 0 0 1 2.828 0 2 2 0 0 1 0 2.828L4.829 18l14.586 14.586a2 2 0 0 1 0 2.828 2 2 0 0 1-1.414.586" fill="#fff" fill-rule="evenodd"/></svg> 돌아가기</a>
-
-        <div class="promotion-vr-box">
-            <ul class="promotion-vr-list">
-                <!--[D] 클릭시 on클래스 추가-->
-                <button type="button"><li class="promotion-vr-item profile" #profileLink (click)="clickProfile()"><span class="blind">profile</span></li></button>
-                <button type="button"><li class="promotion-vr-item location" #locationLink (click)="clickSaeul()"><span class="blind">saeul</span></li></button>
-                <button type="button"><li class="promotion-vr-item item" #itemLink (click)="clickItem()"><span class="blind">item</span></li></button>
-            </ul>
-            <button type="button" class="btn-close-vr" aria-label="닫기" style="display: none;" #closeLayer (click)="clickCloseLayer()"></button>
-        </div>
-
-        <!--[D] PC형 부캐릭터 프로필 -->
-        <div class="promotion-profile-box" style="display: none;" #pcProfile>
-            <img src="../../../../../../assets/images/promotion/img_profile.png" class="promotion-profile-img" width="1434" height="651">
-            <div class="promotion-text">
-                눈빛도 그러하고 그의 정체를 예상할 만한 단서가 꽤나 많기 때문에 함부로 유추할 수는 있으나, 마미손 본인이 밝힌 부분은 복면을 쓰기 전의 자신이 인기 아티스트였다는 것 뿐.
-            </div>
-        </div>
-        <!--[D] mo형 부캐릭터 프로필 -->
-        <div class="promotion-profile-box-mo" #mobileProfile>
-            <div class="swiper-container swiper1">
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="../../../../../../assets/images/promotion_mo/img_title1.png" alt="goods"></div>
-                    <div class="swiper-slide"><img src="../../../../../../assets/images/promotion_mo/img_title2.png" alt="goods"></div>
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <!--[D] 느낌표 아이콘 클릭시 "설명 텍스트 레이어 활성화"-->
-            <button type="button" class="btn-layer" aria-label="프로파일레이어" (click)="clickProfileBoxLayer()"></button>
-            <!--[D] 설명 텍스트 레이어 활성화 : on클래스 추가-->
-            <div class="promotion-profile-box-layer" #profileBoxLayer>
-                <div class="profile-layer">눈빛도 그러하고 그의 정체를 예상할 만한 단서가 꽤나 많기 때문에 함부로 유추할 수는 있으나, 마미손 본인이 밝힌 부분은 복면을 쓰기 전의 자신이 인기 아티스트였다는 것 뿐.</div>
-                <button type="button" class="btn-layer" aria-label="프로파일레이어 닫기" (click)="clickProfileBoxLayer()"></button>
-            </div>
-        </div>
-
-        <!-- item swiper-->
-        <div class="promotion-vr-goods" #goods>
-            <div class="swiper-container swiper2">
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="../../../../../../assets/images/promotion/img_goods.png" alt="goods"></div>
-                    <div class="swiper-slide"><img src="../../../../../../assets/images/promotion/img_goods.png" alt="goods"></div>
-                    <div class="swiper-slide"><img src="../../../../../../assets/images/promotion/img_goods.png" alt="goods"></div>
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>
-        <!--//item swiper-->
-        
-        <div style="display: none;" #location>
-            <h3 class="locate-title"><span class="blind">마미손 세울시 출범지역</span><img src="../../../../../../assets/images/promotion/img_saeul.png"></h3>
-            <!-- 세울 지도 -->
-            <div class="locate-saeul"></div>
-        </div>
-        <div #loading style="position:absolute;top:0;left:0;bottom:0;right:0;background: url(../../../../../../assets/images/loading-buffering.gif) no-repeat; background-position: center; background-size: 50px; background-color: black; z-index: 99999;"></div>
-        <!--[D] 부캐릭터 모델링 3D 파일 -->
-        <div #target style="position:absolute;top:0;left:0;bottom:0;right:0;background: rgba(19, 67, 144, 0.5);"></div>
-    
+  <div class="promotion-vr">
+    <h2 class="blind">부캐릭터 버추얼 공간</h2>
+    <a href="/" class="btn-prev" #backToHome><svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="36"><path d="M18.001 36a2 2 0 0 1-1.414-.586L5.67 24.5.587 19.417a2 2 0 0 1 0-2.828L13.656 3.52 16.587.589a2 2 0 0 1 2.828 0 2 2 0 0 1 0 2.828L4.829 18l14.586 14.586a2 2 0 0 1 0 2.828 2 2 0 0 1-1.414.586" fill="#fff" fill-rule="evenodd"/></svg> 돌아가기</a>
+    <div class="promotion-vr-box">
+        <ul class="promotion-vr-list">
+            <!--[D] 클릭시 on클래스 추가-->
+            <button type="button"><li class="promotion-vr-item on profile" #profileLink (click)="clickProfile()"><span class="blind">profile</span></li></button>
+            <button type="button"><li class="promotion-vr-item on location" #locationLink (click)="clickSaeul()"><span class="blind">saeul</span></li></button>
+            <button type="button"><li class="promotion-vr-item on item" #itemLink (click)="clickItem()"><span class="blind">item</span></li></button>
+        </ul>
+        <button type="button" class="btn-close-vr" aria-label="닫기" style="display: none;" #closeLayer (click)="clickCloseLayer()"></button>
     </div>
-  <!-- //부캐릭터 버추얼 공간 페이지 -->
+
+    <!--[D] PC형 부캐릭터 프로필 -->
+    <div class="promotion-profile-box" style="display: none;" #pcProfile>
+      <img src="../../../../../../assets/images/promotion/img_profile_g.png" class="promotion-profile-img" style="transform: translateX(-100px);" width="1297" height="914">
+      <!-- <img src="../../../../../../assets/images/promotion/img_profile_r.png" class="promotion-profile-img" width="1434" height="651">
+      <div class="promotion-text">
+      눈빛도 그러하고 그의 정체를 예상할 만한 단서가 꽤나 많기 때문에 함부로 유추할 수는 있으나, 마미손 본인이 밝힌 부분은 복면을 쓰기 전의 자신이 인기 아티스트였다는 것 뿐.
+      </div> -->
+    </div>
+    <!--[D] mo형 부캐릭터 프로필 -->
+    <div class="promotion-profile-box-mo" #mobileProfile>
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="../../../../../../assets/images/promotion/img_profile_g_m.png" alt="goods"></div>
+                <div class="swiper-slide"><img src="../../../../../../assets/images/promotion/img_profile_g_m2.png" alt="goods"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!--[D] 느낌표 아이콘 클릭시 "설명 텍스트 레이어 활성화"-->
+        <button type="button" class="btn-layer" aria-label="프로파일레이어" (click)="clickProfileBoxLayer()"></button>
+        <!--[D] 설명 텍스트 레이어 활성화 : on클래스 추가-->
+        <div class="promotion-profile-box-layer" #profileBoxLayer>
+            <div class="profile-layer">눈빛도 그러하고 그의 정체를 예상할 만한 단서가 꽤나 많기 때문에 함부로 유추할 수는 있으나, 마미손 본인이 밝힌 부분은 복면을 쓰기 전의 자신이 인기 아티스트였다는 것 뿐.</div>
+            <button type="button" class="btn-layer" aria-label="프로파일레이어 닫기" (click)="clickProfileBoxLayer()"></button>
+        </div>
+    </div>
+
+    <!-- item swiper-->
+    <div class="promotion-vr-goods" #goods>
+        <div class="swiper-container swiper2 pc-goods">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="../../../../../../assets/images/promotion/img_goods_g.png" alt="goods"></div>
+                <div class="swiper-slide"><img src="../../../../../../assets/images/promotion/img_goods_g2.png" alt="goods"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-container swiper2 mobile-goods">
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="../../../../../../assets/images/promotion/img_goods_g_m.png" alt="goods"></div>
+              <div class="swiper-slide"><img src="../../../../../../assets/images/promotion/img_goods_g2_m.png" alt="goods"></div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!--//item swiper-->
+    
+    <div style="display: none;" #location>
+        <h3 class="locate-title">
+            <span class="blind">마미손 세울시 출범지역</span>
+            <img src="../../../../../../assets/images/promotion/img_sagupargu.png" class="pc_img">
+            <img src="../../../../../../assets/images/promotion/img_sagupargu_m.png" class="m_img">
+            <div class="locate-title-box">
+               새울시의 쇼핑 메카는 단연 사구팔구. 구 전체가 물건을 판매하는 온갖 쇼핑몰과 럭셔리 백화점으로 이루어져 있다. 이곳의 주인은 바로 플렉송 그는 세울 시에서 가장 높은 밀레니어에 최상위층에 거주한다. 그곳에서 매일 밤 수상한 일이 벌어진다는데… 
+            </div>
+          </h3>
+        <!-- 세울 지도 -->
+        <div class="locate-saeul"></div>
+    </div>
+    <div #loading style="position:absolute;top:0;left:0;bottom:0;right:0;background: url(../../../../../../assets/images/loading-buffering.gif) no-repeat; background-position: center; background-size: 50px; background-color: black; z-index: 99999;"></div>
+    <!--[D] 부캐릭터 모델링 3D 파일 -->
+    <div #target style="position:absolute;top:0;left:0;bottom:0;right:0;background: rgba(19, 67, 144, 0.5);"></div>
+
+</div>
+<!-- //부캐릭터 버추얼 공간 페이지 -->
 </div>

@@ -59,7 +59,7 @@ export class SonghaeComponent implements OnInit {
     this.r2.setStyle(this.loadingElement.nativeElement, "display", "");
     setTimeout(() => {
       this.r2.setStyle(this.loadingElement.nativeElement, "display", "none");
-    }, 3000);
+    }, 2500);
   }
 
   public initSwiper() {
@@ -98,9 +98,10 @@ export class SonghaeComponent implements OnInit {
     this.r2.removeClass(this.promotionMainElement.nativeElement, "profile");
     this.r2.removeClass(this.promotionMainElement.nativeElement, "saeul");
     this.r2.removeClass(this.promotionMainElement.nativeElement, "item");
-    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
-    this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
-    this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
+
+    this.r2.addClass(this.profileLinkElement.nativeElement, "on");
+    this.r2.addClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.addClass(this.itemLinkElement.nativeElement, "on");
 
     this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "");
     this.r2.setStyle(this.closeLayerElement.nativeElement, "display", "none");
@@ -117,6 +118,11 @@ export class SonghaeComponent implements OnInit {
   public clickProfile() {
     this.clickProfileFlag = !this.clickProfileFlag;
     this.clickCloseLayer();
+
+    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
+
     this.r2.addClass(this.promotionMainElement.nativeElement, "profile");
     this.r2.addClass(this.profileLinkElement.nativeElement, "on");
     this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "none");
@@ -129,6 +135,11 @@ export class SonghaeComponent implements OnInit {
   public clickSaeul() {
     this.clickSaeulFlag = !this.clickSaeulFlag;
     this.clickCloseLayer();
+
+    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
+
     this.r2.addClass(this.promotionMainElement.nativeElement, "saeul");
     this.r2.addClass(this.locationLinkElement.nativeElement, "on");
     this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "none");
@@ -140,6 +151,11 @@ export class SonghaeComponent implements OnInit {
   public clickItem() {
     this.clickItemFlag = !this.clickItemFlag;
     this.clickCloseLayer();
+    
+    this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
+    this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
+
     this.r2.addClass(this.promotionMainElement.nativeElement, "saeul");
     this.r2.addClass(this.itemLinkElement.nativeElement, "on");
     this.r2.setStyle(this.backToHomeElement.nativeElement, "display", "none");
@@ -166,7 +182,7 @@ export class SonghaeComponent implements OnInit {
       1,
       2000
     );
-    this.camera.position.set(1157.810224274296, 66.57923181043022, -95.20418754415628);
+    this.camera.position.set(795.6415585313925, -82.14010165284742, 14.405347555567399);
 
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
@@ -179,7 +195,7 @@ export class SonghaeComponent implements OnInit {
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "../../../../../../assets/models/gltf/songhae_background1.jpeg"
+        "../../../../../../assets/models/gltf/songhae_background_final.jpeg"
       ),
     });
     let mesh = new THREE.Mesh(geometry, material);
@@ -194,24 +210,30 @@ export class SonghaeComponent implements OnInit {
     );
     loader.setKTX2Loader(ktx2Loader);
     loader.setMeshoptDecoder(MeshoptDecoder);
-    loader.load("songhae_with_stage.glb", (gltf: any) => {     
-      gltf.scene.position.x = 800;
-      gltf.scene.position.y = -400;
-      gltf.scene.position.z = -150;
+    loader.load("songhae.glb", (gltf: any) => {     
+      gltf.scene.position.x = 600;
+      gltf.scene.position.y = -280;
+      gltf.scene.position.z = 0;
       gltf.scene.rotation.y += 1.8;
 
       const mesh = gltf.scenes[0];
-      mesh.scale.set(72, 72, 72);
+      mesh.scale.set(50, 50, 50);
       this.scene.add(gltf.scene);
       this.render(this.renderer);
     });
+
+
+    const light = new THREE.DirectionalLight(0xffffff, 15);
+    light.castShadow = true;
+    light.position.x = 1;
+    this.scene.add(light);
 
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
     controls.addEventListener("change", () => {
       this.render(this.renderer);
     }); // use if there is no animation loop
-    controls.minDistance = 1000;
-    controls.maxDistance = 1200;
+    controls.minDistance = 250;
+    controls.maxDistance = 800;
     controls.maxPolarAngle = Math.PI / 2 + 0.3;
     controls.update();
     window.addEventListener("resize", () => this.onWindowResize(this.renderer));
@@ -225,6 +247,7 @@ export class SonghaeComponent implements OnInit {
   }
 
   public render(renderer: any) {
+    renderer.toneMappingExposure = Math.pow(0.66, 5);
     renderer.render(this.scene, this.camera);
   }
 

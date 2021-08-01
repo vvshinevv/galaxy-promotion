@@ -242,8 +242,8 @@ export class MommysonComponent implements OnInit {
     controls.addEventListener("change", () => {
       this.render(this.renderer);
     }); // use if there is no animation loop
-    controls.minDistance = 0;
-    controls.maxDistance = 1000;
+    controls.minDistance = 300;
+    controls.maxDistance = 700;
     controls.maxPolarAngle = Math.PI / 2 + 0.3;
     //controls.target.set(0, 120, 0);
     

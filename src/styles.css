@@ -1591,7 +1591,7 @@ body {
     .type2 .promotion-vr .promotion-vr-item.profile {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/g_item.png) no-repeat center center/24px 34px;
+        background: url(assets/images/promotion/g_profile.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1599,7 +1599,7 @@ body {
     .type2 .promotion-vr .promotion-vr-item.location {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/g_item.png) no-repeat center center/24px 34px;
+        background: url(assets/images/promotion/g_saeul.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1791,7 +1791,7 @@ body {
     .promotion-vr .btn-prev {
         top: 52px;
         left: 40px;
-        transform: scale(40%);
+        transform: scale(20%);
     }
 }
 
@@ -2163,8 +2163,10 @@ body {
 
 @media (max-width: 800px) {
     .locate-saeul {
-        top: -130px;
-        transform: translateX(-50%) scale(38%);
+        top: 150px;
+        width: 320px;
+        height: 260px;
+        background-size: contain !important;
     }
     /* .type2 .locate-saeul {
         top: -180px;
@@ -2259,7 +2261,7 @@ body {
     }
     .promotion-profile-box-mo .swiper-button-prev,
     .promotion-profile-box-mo .swiper-button-next {
-        top: -70px;
+        top: -84px;
         left: auto;
         right: -20px;
         content: "";

@@ -195,8 +195,8 @@ export class MommysonComponent implements OnInit {
       1,
       2000
     );
-    this.camera.position.set(687.2454004363664, -127.87888351205737, 36.61626320049812);
-
+    
+    this.camera.position.set(690.8613149003661, -2.2861705289419447, 16.882340027720655);
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
     this.scene = new THREE.Scene();
@@ -242,8 +242,8 @@ export class MommysonComponent implements OnInit {
     controls.addEventListener("change", () => {
       this.render(this.renderer);
     }); // use if there is no animation loop
-    controls.minDistance = 700;
-    controls.maxDistance = 700;
+    controls.minDistance = 0;
+    controls.maxDistance = 1000;
     controls.maxPolarAngle = Math.PI / 2 + 0.3;
     //controls.target.set(0, 120, 0);
     

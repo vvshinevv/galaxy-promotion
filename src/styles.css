@@ -1791,7 +1791,7 @@ body {
     .promotion-vr .btn-prev {
         top: 52px;
         left: 40px;
-        transform: scale(20%);
+        transform: scale(40%);
     }
 }
 
@@ -2261,7 +2261,6 @@ body {
     }
     .promotion-profile-box-mo .swiper-button-prev,
     .promotion-profile-box-mo .swiper-button-next {
-        top: -84px;
         left: auto;
         right: -20px;
         content: "";

@@ -196,7 +196,7 @@ export class MommysonComponent implements OnInit {
       2000
     );
     
-    this.camera.position.set(690.8613149003661, -2.2861705289419447, 16.882340027720655);
+    this.camera.position.set(690.0372696095377, -46.76208167735994, 44.58119546339921);
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
     this.scene = new THREE.Scene();
@@ -260,7 +260,6 @@ export class MommysonComponent implements OnInit {
   }
 
   public render(renderer: any) {
-    console.log(this.camera.position);
     renderer.toneMappingExposure = Math.pow(0.66, 1);
     renderer.render(this.scene, this.camera);
   }

@@ -1555,7 +1555,7 @@ body {
 }
 
 .type1 .promotion-vr {
-    /* background: url(assets/images/promotion/background_red.png) no-repeat center center/cover; */
+    background: url(assets/images/promotion/background_red.png) no-repeat center center/cover;
 }
 
 @media (max-width: 1024px) {
@@ -1875,7 +1875,7 @@ body {
 .promotion-vr-goods {
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 8;
@@ -2068,7 +2068,7 @@ body {
 
 .locate-title {
     position: absolute;
-    top: 64px;
+    top: 190px;
     left: 50%;
     bottom: 0;
     z-index: 10;
@@ -2114,7 +2114,7 @@ body {
         min-width: 147px;
         top: auto;
         left: 40px;
-        bottom: 21px;
+        bottom: 41px;
         transform: none;
         transform: none;
     }
@@ -2149,7 +2149,7 @@ body {
 
 .locate-saeul {
     position: absolute;
-    top: 110px;
+    top: 220px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 8;
@@ -2232,7 +2232,7 @@ body {
     .promotion-profile-box-mo {
         display: block;
         position: absolute;
-        top: 22px;
+        top: 35%;
         left: 0;
         right: 0;
         width: calc(100% - 136px);
@@ -2253,7 +2253,7 @@ body {
     }
     .promotion-profile-box-mo .swiper-button-prev,
     .promotion-profile-box-mo .swiper-button-next {
-        top: 83px;
+        top: -150px;
         left: auto;
         right: -56px;
         content: "";

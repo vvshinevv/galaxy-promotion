@@ -196,7 +196,7 @@ export class MommysonComponent implements OnInit {
       2000
     );
     
-    this.camera.position.set(690.0372696095377, -46.76208167735994, 44.58119546339921);
+    this.camera.position.set(541.5909146860964, 7.656044597430558, -1.329036269394888);
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
     this.scene = new THREE.Scene();
@@ -207,7 +207,7 @@ export class MommysonComponent implements OnInit {
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "../../../../../../assets/models/gltf/mommyson_background_final.jpeg"
+        "http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/glb/mommyson_background_final.jpeg"
       ),
     });
 
@@ -219,14 +219,14 @@ export class MommysonComponent implements OnInit {
       .detectSupport(this.renderer);
 
     const loader = new GLTFLoader().setPath(
-      "../../../../../../assets/models/gltf/"
+      "http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/glb/"
     );
     loader.setKTX2Loader(ktx2Loader);
     loader.setMeshoptDecoder(MeshoptDecoder);
 
-    loader.load("mommyson.glb", (gltf: any) => {
-      gltf.scene.position.y = -250;
-      gltf.scene.position.x = -11;
+    loader.load("mommyson_row.glb", (gltf: any) => {
+      gltf.scene.position.y = -200;
+      gltf.scene.position.x = 100;
       gltf.scene.position.z = 15;
 
       const mesh = gltf.scenes[0];

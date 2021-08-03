@@ -212,7 +212,7 @@ export class SonghaeComponent implements OnInit {
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "../../../../../../assets/models/gltf/songhae_background_final.jpeg"
+        "http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/glb/songhae_background_final.jpeg"
       ),
     });
     let mesh = new THREE.Mesh(geometry, material);
@@ -223,12 +223,12 @@ export class SonghaeComponent implements OnInit {
       .detectSupport(this.renderer);
 
     const loader = new GLTFLoader().setPath(
-      "../../../../../../assets/models/gltf/"
+      "http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/glb/"
     );
     loader.setKTX2Loader(ktx2Loader);
     loader.setMeshoptDecoder(MeshoptDecoder);
-    loader.load("songhae.glb", (gltf: any) => {
-      gltf.scene.position.x = 600;
+    loader.load("songhae_row.glb", (gltf: any) => {
+      gltf.scene.position.x = 300;
       gltf.scene.position.y = -280;
       gltf.scene.position.z = 0;
       gltf.scene.rotation.y += 1.8;

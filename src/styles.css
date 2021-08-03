@@ -956,7 +956,7 @@ body {
 .type3 .promotion-vr .promotion-vr-box,
 .sp-promotion-youtube,
 .promotion-item-link.youtube {
-    background-image: url("assets/images/sprite/promotion.png?v=2b1c0008");
+    background-image: url("http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/sprite/promotion.png?v=2b1c0008");
 }
 
 .sp-promotion-close_blue,
@@ -1373,33 +1373,33 @@ body {
     display: inline-block;
     width: 490px;
     height: 93px;
-    background: url(assets/images/promotion/title.png) no-repeat center;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title.png) no-repeat center;
     background-size: cover;
     margin-top: -4px;
 }
 
 .type1 .promotion-item-link.logo {
-    background: url(assets/images/promotion/title_red.png) no-repeat center;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_red.png) no-repeat center;
     background-size: cover;
 }
 
 .type2 .promotion-item-link.logo {
-    background: url(assets/images/promotion/title_green.png) no-repeat center;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_green.png) no-repeat center;
     background-size: cover;
 }
 
 .type3 .promotion-item-link.logo {
-    background: url(assets/images/promotion/title_yellow.png) no-repeat center;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_yellow.png) no-repeat center;
     background-size: cover;
 }
 
 .type4 .promotion-item-link.logo {
-    background: url(assets/images/promotion/title_purple.png) no-repeat center;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_purple.png) no-repeat center;
     background-size: cover;
 }
 
 .type5 .promotion-item-link.logo {
-    background: url(assets/images/promotion/title_blue.png) no-repeat center;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_blue.png) no-repeat center;
     background-size: cover;
 }
 
@@ -1408,22 +1408,22 @@ body {
         width: 120px !important;
         height: 46.5px !important;
         margin-top: 5px;
-        background: url(assets/images/promotion/title.png) no-repeat center center/220px auto;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title.png) no-repeat center center/220px auto;
     }
     .type1 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_red.png) no-repeat center center/220px auto;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_red.png) no-repeat center center/220px auto;
     }
     .type2 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_green.png) no-repeat center center/220px auto;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_green.png) no-repeat center center/220px auto;
     }
     .type3 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_yellow.png) no-repeat center center/220px auto;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_yellow.png) no-repeat center center/220px auto;
     }
     .type4 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_purple.png) no-repeat center center/220px auto;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_purple.png) no-repeat center center/220px auto;
     }
     .type5 .promotion-item-link.logo {
-        background: url(assets/images/promotion/title_blue.png) no-repeat center center/220px auto;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_blue.png) no-repeat center center/220px auto;
     }
 }
 
@@ -1558,13 +1558,13 @@ body {
 }
 
 .type1 .promotion-vr {
-    /* background: url(assets/images/promotion/background_red.png) no-repeat center center/cover; */
+    /* background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/background_red.png) no-repeat center center/cover; */
     background-color: black;
 }
 
 @media (max-width: 1024px) {
     .type1 .promotion-vr {
-        /* background: url(assets/images/promotion/r_bg.png) no-repeat center center/cover; */
+        /* background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/r_bg.png) no-repeat center center/cover; */
         background-color: black;
     }
 }
@@ -1573,18 +1573,18 @@ body {
     .type1 .promotion-vr .promotion-vr-box {
         width: 55.5px;
         height: 146px;
-        background: url(assets/images/promotion/r_bar.png) no-repeat center center/55.5px 146px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/r_bar.png) no-repeat center center/55.5px 146px;
     }
 }
 
 .type2 .promotion-vr {
-    /* background: url(assets/images/promotion/background_green.png) no-repeat center center/cover; */
+    /* background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/background_green.png) no-repeat center center/cover; */
     background-color: black;
 }
 
 @media (max-width: 1024px) {
     .type2 .promotion-vr {
-        /* background: url(assets/images/promotion/g_bg.png) no-repeat center center/cover; */
+        /* background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/g_bg.png) no-repeat center center/cover; */
         background-color: black;
     }
 }
@@ -1593,7 +1593,7 @@ body {
     .type2 .promotion-vr .promotion-vr-box {
         width: 55.5px;
         height: 146px;
-        background: url(assets/images/promotion/g_bar.png) no-repeat center center/55.5px 146px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/g_bar.png) no-repeat center center/55.5px 146px;
     }
 }
 
@@ -1601,7 +1601,7 @@ body {
     .type2 .promotion-vr .promotion-vr-item.profile {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/g_profile.png) no-repeat center center/24px 34px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/g_profile.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1609,7 +1609,7 @@ body {
     .type2 .promotion-vr .promotion-vr-item.location {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/g_saeul.png) no-repeat center center/24px 34px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/g_saeul.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1617,7 +1617,7 @@ body {
     .type2 .promotion-vr .promotion-vr-item.item {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/g_item.png) no-repeat center center/24px 34px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/g_item.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1625,17 +1625,17 @@ body {
     .type2 .promotion-vr .btn-close-vr {
         width: 25px;
         height: 23px;
-        background: url(assets/images/promotion/g_x.png) no-repeat center center/25px 23px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/g_x.png) no-repeat center center/25px 23px;
     }
 }
 
 .type3 .promotion-vr {
-    background: url(assets/images/promotion/background_yellow.png) no-repeat center center/cover;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/background_yellow.png) no-repeat center center/cover;
 }
 
 @media (max-width: 1024px) {
     .type3 .promotion-vr {
-        background: url(assets/images/promotion/y_bg.png) no-repeat center center/cover;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/y_bg.png) no-repeat center center/cover;
     }
 }
 
@@ -1643,7 +1643,7 @@ body {
     .type3 .promotion-vr .promotion-vr-box {
         width: 54.5px;
         height: 195.5px;
-        background: url(assets/images/promotion/y_bar.png) no-repeat center center/54.5px 195.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/y_bar.png) no-repeat center center/54.5px 195.5px;
     }
 }
 
@@ -1651,7 +1651,7 @@ body {
     .type3 .promotion-vr .promotion-vr-item.profile {
         width: 25px;
         height: 42.5px;
-        background: url(assets/images/promotion/y_profile.png) no-repeat center center/25px 42.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/y_profile.png) no-repeat center center/25px 42.5px;
     }
 }
 
@@ -1659,7 +1659,7 @@ body {
     .type3 .promotion-vr .promotion-vr-item.location {
         width: 25px;
         height: 42.5px;
-        background: url(assets/images/promotion/y_saeul.png) no-repeat center center/25px 42.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/y_saeul.png) no-repeat center center/25px 42.5px;
     }
 }
 
@@ -1667,7 +1667,7 @@ body {
     .type3 .promotion-vr .promotion-vr-item.item {
         width: 25px;
         height: 42.5px;
-        background: url(assets/images/promotion/y_item.png) no-repeat center center/25px 42.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/y_item.png) no-repeat center center/25px 42.5px;
     }
 }
 
@@ -1675,17 +1675,17 @@ body {
     .type3 .promotion-vr .btn-close-vr {
         width: 25px;
         height: 23px;
-        background: url(assets/images/promotion/y_x.png) no-repeat center center/25px 23px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/y_x.png) no-repeat center center/25px 23px;
     }
 }
 
 .type4 .promotion-vr {
-    background: url(assets/images/promotion/background_puple.png) no-repeat center center/cover;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/background_puple.png) no-repeat center center/cover;
 }
 
 @media (max-width: 1024px) {
     .type4 .promotion-vr {
-        background: url(assets/images/promotion/v_bg.png) no-repeat center center/cover;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/v_bg.png) no-repeat center center/cover;
     }
 }
 
@@ -1693,7 +1693,7 @@ body {
     .type4 .promotion-vr .promotion-vr-box {
         width: 54.5px;
         height: 195.5px;
-        background: url(assets/images/promotion/v_bar.png) no-repeat center center/54.5px 195.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/v_bar.png) no-repeat center center/54.5px 195.5px;
     }
 }
 
@@ -1701,7 +1701,7 @@ body {
     .type4 .promotion-vr .promotion-vr-item.profile {
         width: 25px;
         height: 42.5px;
-        background: url(assets/images/promotion/v_profile.png) no-repeat center center/25px 42.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/v_profile.png) no-repeat center center/25px 42.5px;
     }
 }
 
@@ -1709,7 +1709,7 @@ body {
     .type4 .promotion-vr .promotion-vr-item.location {
         width: 25px;
         height: 42.5px;
-        background: url(assets/images/promotion/v_saeul.png) no-repeat center center/25px 42.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/v_saeul.png) no-repeat center center/25px 42.5px;
     }
 }
 
@@ -1717,7 +1717,7 @@ body {
     .type4 .promotion-vr .promotion-vr-item.item {
         width: 25px;
         height: 42.5px;
-        background: url(assets/images/promotion/v_item.png) no-repeat center center/25px 42.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/v_item.png) no-repeat center center/25px 42.5px;
     }
 }
 
@@ -1725,17 +1725,17 @@ body {
     .type4 .promotion-vr .btn-close-vr {
         width: 25px;
         height: 23px;
-        background: url(assets/images/promotion/v_x.png) no-repeat center center/25px 23px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/v_x.png) no-repeat center center/25px 23px;
     }
 }
 
 .type5 .promotion-vr {
-    background: url(assets/images/promotion/background_blue.png) no-repeat center center/cover;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/background_blue.png) no-repeat center center/cover;
 }
 
 @media (max-width: 1024px) {
     .type5 .promotion-vr {
-        background: url(assets/images/promotion/b_bg.png) no-repeat center center/cover;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b_bg.png) no-repeat center center/cover;
     }
 }
 
@@ -1743,7 +1743,7 @@ body {
     .type5 .promotion-vr .promotion-vr-box {
         width: 54.5px;
         height: 195.5px;
-        background: url(assets/images/promotion/b_bar.png) no-repeat center center/54.5px 195.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b_bar.png) no-repeat center center/54.5px 195.5px;
     }
 }
 
@@ -1751,7 +1751,7 @@ body {
     .type5 .promotion-vr .promotion-vr-item.profile {
         width: 25px;
         height: 42.5px;
-        background: url(assets/images/promotion/b_profile.png) no-repeat center center/25px 42.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b_profile.png) no-repeat center center/25px 42.5px;
     }
 }
 
@@ -1759,7 +1759,7 @@ body {
     .type5 .promotion-vr .promotion-vr-item.location {
         width: 25px;
         height: 42.5px;
-        background: url(assets/images/promotion/b_saeul.png) no-repeat center center/25px 42.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b_saeul.png) no-repeat center center/25px 42.5px;
     }
 }
 
@@ -1767,7 +1767,7 @@ body {
     .type5 .promotion-vr .promotion-vr-item.item {
         width: 25px;
         height: 42.5px;
-        background: url(assets/images/promotion/b_item.png) no-repeat center center/25px 42.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b_item.png) no-repeat center center/25px 42.5px;
     }
 }
 
@@ -1775,7 +1775,7 @@ body {
     .type5 .promotion-vr .btn-close-vr {
         width: 25px;
         height: 23px;
-        background: url(assets/images/promotion/b_x.png) no-repeat center center/25px 23px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b_x.png) no-repeat center center/25px 23px;
     }
 }
 
@@ -1826,7 +1826,7 @@ body {
     .promotion-vr-box {
         width: 54.5px;
         height: 195.5px;
-        background: url(assets/images/promotion/r_bar.png) no-repeat center center/54.5px 195.5px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/r_bar.png) no-repeat center center/54.5px 195.5px;
     }
 }
 
@@ -1856,7 +1856,7 @@ body {
     .promotion-vr-item.profile {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/r_profile.png) no-repeat center center/24px 34px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/r_profile.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1864,7 +1864,7 @@ body {
     .promotion-vr-item.location {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/r_saeul.png) no-repeat center center/24px 34px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/r_saeul.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1872,7 +1872,7 @@ body {
     .promotion-vr-item.item {
         width: 24px;
         height: 34px;
-        background: url(assets/images/promotion/r_item.png) no-repeat center center/24px 34px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/r_item.png) no-repeat center center/24px 34px;
     }
 }
 
@@ -1955,18 +1955,18 @@ body {
         position: fixed;
         top: 79px;
         right: 40px;
-        background: url(assets/images/promotion/x.png) no-repeat center center/25px 23px;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/x.png) no-repeat center center/25px 23px;
     }
 }
 
 .promotion-planet {
     height: 100%;
-    background: url(assets/images/promotion/background_planet.png) no-repeat center/cover;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/background_planet.png) no-repeat center/cover;
 }
 
 @media (max-width: 1024px) {
     .promotion-planet {
-        background: url(assets/images/promotion/background_planet.png) no-repeat center/cover;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/background_planet.png) no-repeat center/cover;
     }
 }
 
@@ -2002,14 +2002,14 @@ body {
     display: inline-block;
     width: 404px;
     height: 147px;
-    background: url(assets/images/promotion/title_planet.png) no-repeat 0 0;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_planet.png) no-repeat 0 0;
 }
 
 .promotion-planet-wrap .title2 {
     width: 404px;
     height: 147px;
     margin-top: 340px;
-    background: url(assets/images/promotion/title_planet2.png) no-repeat 0 0;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title_planet2.png) no-repeat 0 0;
 }
 
 .promotion-planet-wrap .text {
@@ -2185,11 +2185,11 @@ body {
 }
 
 .type1 .locate-saeul {
-    background: url(assets/images/promotion/img_locate_saeul_r.png) no-repeat 0 0;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/img_locate_saeul_r.png) no-repeat 0 0;
 }
 
 .type2 .locate-saeul {
-    background: url(assets/images/promotion/img_locate_saeul_g.png) no-repeat 0 0;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/img_locate_saeul_g.png) no-repeat 0 0;
 }
 
 @keyframes blink-animation {
@@ -2237,7 +2237,7 @@ body {
     content: "";
     width: 25px;
     height: 23px;
-    background: url(assets/images/promotion/icon_i.png) 0 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/icon_i.png) 0 0 no-repeat;
     background-size: 25px 23px;
 }
 
@@ -2276,7 +2276,7 @@ body {
         content: "";
         width: 25px;
         height: 23px;
-        background: #000 url(assets/images/promotion/icon_swiper_next.png) 0 0 no-repeat;
+        background: #000 url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/icon_swiper_next.png) 0 0 no-repeat;
         background-size: 25px 23px;
     }
     .promotion-profile-box-mo .swiper-button-prev::after,
@@ -2285,7 +2285,7 @@ body {
     }
     .type2 .promotion-profile-box-mo .swiper-button-prev,
     .type2 .promotion-profile-box-mo .swiper-button-next {
-        background: #000 url(assets/images/promotion/icon_swiper_next_g.png) 0 0 no-repeat;
+        background: #000 url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/icon_swiper_next_g.png) 0 0 no-repeat;
         background-size: 25px 23px;
     }
     .promotion-profile-box-mo .swiper-button-prev.swiper-button-disabled {
@@ -2320,7 +2320,7 @@ body {
     position: fixed;
     top: 134px;
     right: 40px;
-    background: url(assets/images/promotion/icon_dash.png) no-repeat center center/25px 23px;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/icon_dash.png) no-repeat center center/25px 23px;
 }
 
 .promotion-profile-box-layer .profile-layer {
@@ -2341,7 +2341,7 @@ body {
     font-weight: 900;
     line-height: 36px;
     text-align: left;
-    background: url(assets/images/promotion/bg_line.png) no-repeat 0 0/136.5px 104px;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/bg_line.png) no-repeat 0 0/136.5px 104px;
 }
 
 .promotion-profile-img {
@@ -2450,12 +2450,12 @@ body {
 .broadcast-item button {
     width: 176px;
     height: 54px;
-    background: url(assets/images/promotion/img_broad_title1.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/img_broad_title1.png) center 0 no-repeat;
     background-size: 176px 41px;
 }
 
 .broadcast-item.on button {
-    background: url(assets/images/promotion/img_broad_title1_on.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/img_broad_title1_on.png) center 0 no-repeat;
     background-size: 176px 54px;
 }
 
@@ -2474,12 +2474,12 @@ body {
 }
 
 .broadcast-item:nth-child(2) button {
-    background: url(assets/images/promotion/img_broad_title2.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/img_broad_title2.png) center 0 no-repeat;
     background-size: 176px 41px;
 }
 
 .broadcast-item.on:nth-child(2) button {
-    background: url(assets/images/promotion/img_broad_title2_on.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/img_broad_title2_on.png) center 0 no-repeat;
     background-size: 176px 54px;
 }
 
@@ -2588,14 +2588,14 @@ body {
     bottom: 0;
     padding-top: 93px;
     height: 100%;
-    background: url(assets/images/promotion/bg_intro.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/bg_intro.png) center 0 no-repeat;
     background-size: cover;
 }
 
 @media (max-width: 824px) {
     .intro .bg-1 {
         padding-top: 46.5px;
-        background: url(assets/images/promotion/bg_intro_m.png) center 46.5px no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/bg_intro_m.png) center 46.5px no-repeat;
     }
 }
 
@@ -2608,14 +2608,14 @@ body {
     bottom: 0;
     padding-top: 93px;
     height: 100%;
-    background: url(assets/images/promotion/bg_intro2.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/bg_intro2.png) center 0 no-repeat;
     background-size: cover;
 }
 
 @media (max-width: 824px) {
     .intro .bg-2 {
         padding-top: 46.5px;
-        background: url(assets/images/promotion/bg_intro2_m.png) center 46.5px no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/bg_intro2_m.png) center 46.5px no-repeat;
     }
 }
 
@@ -2626,7 +2626,7 @@ body {
     width: 591px;
     height: 746px;
     margin-left: -618px;
-    background: url(assets/images/promotion/person-1-on.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/person-1-on.png) center 0 no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2646,7 +2646,7 @@ body {
     width: 591px;
     height: 746px;
     margin-left: 27px;
-    background: url(assets/images/promotion/person-2-on.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/person-2-on.png) center 0 no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2666,7 +2666,7 @@ body {
     top: 750px;
     left: 50%;
     margin-left: -222px;
-    background: url(assets/images/promotion/title-intro.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/title-intro.png) center 0 no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2689,7 +2689,7 @@ body {
 }
 
 .intro .p1 .person-2 {
-    background: url(assets/images/promotion/person-2.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/person-2.png) center 0 no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2707,7 +2707,7 @@ body {
 }
 
 .intro .p2 .person-1 {
-    background: url(assets/images/promotion/person-1.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/person-1.png) center 0 no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2723,7 +2723,7 @@ body {
     top: 93px;
     left: 50%;
     margin-left: -782px;
-    background: url(assets/images/promotion/c-b.png) center 0 no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/c-b.png) center 0 no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2739,7 +2739,7 @@ body {
     top: 216px;
     left: 50%;
     margin-left: 22px;
-    background: url(assets/images/promotion/c-g.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/c-g.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2755,7 +2755,7 @@ body {
     top: 83px;
     left: 50%;
     margin-left: 508px;
-    background: url(assets/images/promotion/c-p.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/c-p.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2765,7 +2765,7 @@ body {
         top: 65px;
         left: 50%;
         margin-left: 41px;
-        background: url(assets/images/promotion/c-p-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/c-p-m.png) center no-repeat;
         background-size: 52px auto;
     }
 }
@@ -2777,7 +2777,7 @@ body {
     top: 808px;
     left: 50%;
     margin-left: -631px;
-    background: url(assets/images/promotion/c-r.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/c-r.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2788,7 +2788,7 @@ body {
         bottom: 66px;
         left: 50%;
         margin-left: -176px;
-        background: url(assets/images/promotion/c-r-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/c-r-m.png) center no-repeat;
         background-size: 78px auto;
     }
 }
@@ -2800,7 +2800,7 @@ body {
     top: 730px;
     left: 50%;
     margin-left: 598px;
-    background: url(assets/images/promotion/c-y.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/c-y.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2811,7 +2811,7 @@ body {
         bottom: 39px;
         left: 50%;
         margin-left: 80px;
-        background: url(assets/images/promotion/c-y-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/c-y-m.png) center no-repeat;
         background-size: 112px auto;
     }
 }
@@ -2826,7 +2826,7 @@ body {
     width: 425px;
     height: 108px;
     margin: 140px auto 0;
-    background: url(assets/images/promotion/t-1.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-1.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2834,7 +2834,7 @@ body {
         width: 140px;
         height: 35.5px;
         margin: 60px auto 0;
-        background: url(assets/images/promotion/t-1-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-1-m.png) center no-repeat;
         background-size: 140px 35.5px;
     }
 }
@@ -2843,7 +2843,7 @@ body {
     width: 910px;
     height: 162px;
     margin: 52px auto 0;
-    background: url(assets/images/promotion/t-2.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-2.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2851,7 +2851,7 @@ body {
         width: 286px;
         height: 50px;
         margin: 11px auto 0;
-        background: url(assets/images/promotion/t-2-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-2-m.png) center no-repeat;
         background-size: 286px 50px;
     }
 }
@@ -2860,7 +2860,7 @@ body {
     width: 1058px;
     height: 120px;
     margin: 84px auto 0;
-    background: url(assets/images/promotion/t-3.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-3.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2868,7 +2868,7 @@ body {
         width: 309px;
         height: 34.5px;
         margin: 13px auto 0;
-        background: url(assets/images/promotion/t-3-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-3-m.png) center no-repeat;
         background-size: 309px 34.5px;
     }
 }
@@ -2877,7 +2877,7 @@ body {
     width: 862px;
     height: 268px;
     margin: 147px auto;
-    background: url(assets/images/promotion/t-4.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-4.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2885,7 +2885,7 @@ body {
         width: 287px;
         height: 97.5px;
         margin: 31px auto 0;
-        background: url(assets/images/promotion/t-4-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-4-m.png) center no-repeat;
         background-size: 287px 97.5px;
     }
 }
@@ -2896,7 +2896,7 @@ body {
     width: 762px;
     height: 189px;
     margin: 0 auto 118px;
-    background: url(assets/images/promotion/t-5.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-5.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
@@ -2904,7 +2904,7 @@ body {
         width: 238px;
         height: 58.5px;
         margin: 30px auto 0;
-        background: url(assets/images/promotion/t-5-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/t-5-m.png) center no-repeat;
         background-size: 238px 58.5px;
     }
 }
@@ -2923,7 +2923,7 @@ body {
     position: relative;
     padding-top: 45px;
     padding-bottom: 45px;
-    background: url(assets/images/promotion/bottom-intro.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/bottom-intro.png) center no-repeat;
 }
 
 .intro2 .bottom-intro::before {
@@ -2991,14 +2991,14 @@ body {
     display: block;
     width: 339px;
     height: 128px;
-    background: url(assets/images/promotion/b-1.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b-1.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
     .intro2 .bottom-intro .b-box .icon {
         width: 98.5px;
         height: 37.5px;
-        background: url(assets/images/promotion/b-1-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b-1-m.png) center no-repeat;
         background-size: 98.5px 37.5px;
     }
 }
@@ -3007,14 +3007,14 @@ body {
     display: block;
     width: 339px;
     height: 56px;
-    background: url(assets/images/promotion/b-2.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b-2.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
     .intro2 .bottom-intro .b-box .icon2 {
         width: 33px;
         height: 14.5px;
-        background: url(assets/images/promotion/b-2-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b-2-m.png) center no-repeat;
         background-size: 33px 14.5px;
     }
 }
@@ -3023,14 +3023,14 @@ body {
     display: block;
     width: 240px;
     height: 104px;
-    background: url(assets/images/promotion/b-3.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b-3.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
     .intro2 .bottom-intro .b-box .icon3 {
         width: 70px;
         height: 30.5px;
-        background: url(assets/images/promotion/b-3-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b-3-m.png) center no-repeat;
         background-size: 70px 30.5px;
     }
 }
@@ -3039,14 +3039,14 @@ body {
     display: block;
     width: 366px;
     height: 58px;
-    background: url(assets/images/promotion/b-4.png) center no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b-4.png) center no-repeat;
 }
 
 @media (max-width: 824px) {
     .intro2 .bottom-intro .b-box .icon4 {
         width: 102px;
         height: 16px;
-        background: url(assets/images/promotion/b-4-m.png) center no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/b-4-m.png) center no-repeat;
         background-size: 102px 16px;
     }
 }
@@ -3057,13 +3057,13 @@ body {
     left: 0;
     width: 100%;
     height: 274px;
-    background: url(assets/images/promotion/i-p.png) center -20px no-repeat;
+    background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/i-p.png) center -20px no-repeat;
 }
 
 @media (max-width: 824px) {
     .intro2 .i-p {
         height: 55px;
-        background: url(assets/images/promotion/i-p-m.png) center -10px no-repeat;
+        background: url(http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/images/promotion_pc/i-p-m.png) center -10px no-repeat;
         background-size: 443.5px 369.5px;
     }
 }

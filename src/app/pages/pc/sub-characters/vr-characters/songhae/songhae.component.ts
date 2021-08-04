@@ -40,6 +40,7 @@ export class SonghaeComponent implements OnInit {
   spotLight: any;
   swiper1: any;
   swiper2: any;
+  swiper3: any;
 
   clickProfileBoxLayerFlag: boolean = false;
   clickProfileFlag: boolean = false;
@@ -81,7 +82,19 @@ export class SonghaeComponent implements OnInit {
 
     this.swiper2 = new Swiper(".swiper2", {
       slidesPerView: 1,
-      spaceBetween: 72,
+      spaceBetween: 0,
+      direction: "horizontal",
+      loop: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    this.swiper3 = new Swiper(".swiper3", {
+      slidesPerView: 1,
+      spaceBetween: 0,
       direction: "horizontal",
       loop: true,
 
@@ -151,7 +164,7 @@ export class SonghaeComponent implements OnInit {
   public clickItem() {
     this.clickItemFlag = !this.clickItemFlag;
     this.clickCloseLayer();
-    
+
     this.r2.removeClass(this.profileLinkElement.nativeElement, "on");
     this.r2.removeClass(this.locationLinkElement.nativeElement, "on");
     this.r2.removeClass(this.itemLinkElement.nativeElement, "on");
@@ -182,7 +195,11 @@ export class SonghaeComponent implements OnInit {
       1,
       2000
     );
-    this.camera.position.set(795.6415585313925, -82.14010165284742, 14.405347555567399);
+    this.camera.position.set(
+      795.6415585313925,
+      -82.14010165284742,
+      14.405347555567399
+    );
 
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
@@ -195,7 +212,7 @@ export class SonghaeComponent implements OnInit {
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "../../../../../../assets/models/gltf/songhae_background_final.jpeg"
+        "http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/glb/songhae_background_final.jpeg"
       ),
     });
     let mesh = new THREE.Mesh(geometry, material);
@@ -206,12 +223,12 @@ export class SonghaeComponent implements OnInit {
       .detectSupport(this.renderer);
 
     const loader = new GLTFLoader().setPath(
-      "../../../../../../assets/models/gltf/"
+      "http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/glb/"
     );
     loader.setKTX2Loader(ktx2Loader);
     loader.setMeshoptDecoder(MeshoptDecoder);
-    loader.load("songhae.glb", (gltf: any) => {     
-      gltf.scene.position.x = 600;
+    loader.load("songhae_row.glb", (gltf: any) => {
+      gltf.scene.position.x = 300;
       gltf.scene.position.y = -280;
       gltf.scene.position.z = 0;
       gltf.scene.rotation.y += 1.8;
@@ -221,7 +238,6 @@ export class SonghaeComponent implements OnInit {
       this.scene.add(gltf.scene);
       this.render(this.renderer);
     });
-
 
     const light = new THREE.DirectionalLight(0xffffff, 15);
     light.castShadow = true;

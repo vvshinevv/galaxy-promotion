@@ -40,6 +40,7 @@ export class MommysonComponent implements OnInit {
   spotLight: any;
   swiper1: any;
   swiper2: any;
+  swiper3: any;
 
   clickProfileBoxLayerFlag: boolean = false;
   clickProfileFlag: boolean = false;
@@ -81,7 +82,19 @@ export class MommysonComponent implements OnInit {
 
     this.swiper2 = new Swiper(".swiper2", {
       slidesPerView: 1,
-      spaceBetween: 72,
+      spaceBetween: 0,
+      direction: "horizontal",
+      loop: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    this.swiper3 = new Swiper(".swiper3", {
+      slidesPerView: 1,
+      spaceBetween: 0,
       direction: "horizontal",
       loop: true,
 
@@ -182,8 +195,8 @@ export class MommysonComponent implements OnInit {
       1,
       2000
     );
-    this.camera.position.set(455.93263995891914, -84.83746405233299, 24.29197712466832);
-
+    
+    this.camera.position.set(541.5909146860964, 7.656044597430558, -1.329036269394888);
     const environment = new RoomEnvironment();
     const pmremGenerator = new THREE.PMREMGenerator(this.renderer);
     this.scene = new THREE.Scene();
@@ -194,9 +207,10 @@ export class MommysonComponent implements OnInit {
     geometry.scale(-1, 1, 1);
     var material = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load(
-        "../../../../../../assets/models/gltf/mommyson_background_final.jpeg"
+        "http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/glb/mommyson_background_final.jpeg"
       ),
     });
+
     let mesh = new THREE.Mesh(geometry, material);
     this.scene.add(mesh);
 
@@ -205,33 +219,34 @@ export class MommysonComponent implements OnInit {
       .detectSupport(this.renderer);
 
     const loader = new GLTFLoader().setPath(
-      "../../../../../../assets/models/gltf/"
+      "http://galaxy-s3-bucket.s3.ap-northeast-2.amazonaws.com/promotion/glb/"
     );
     loader.setKTX2Loader(ktx2Loader);
     loader.setMeshoptDecoder(MeshoptDecoder);
 
-    loader.load("mommyson.glb", (gltf: any) => {
-      gltf.scene.position.y = -250;
-      gltf.scene.position.x = -11;
+    loader.load("mommyson_row.glb", (gltf: any) => {
+      gltf.scene.position.y = -200;
+      gltf.scene.position.x = 100;
       gltf.scene.position.z = 15;
 
       const mesh = gltf.scenes[0];
       mesh.scale.set(100, 100, 100);
       gltf.scene.rotation.y += 1.5;
 
-
       this.scene.add(gltf.scene);
       this.render(this.renderer);
     });
+    
 
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
     controls.addEventListener("change", () => {
       this.render(this.renderer);
     }); // use if there is no animation loop
-    controls.minDistance = 200;
+    controls.minDistance = 300;
     controls.maxDistance = 700;
     controls.maxPolarAngle = Math.PI / 2 + 0.3;
     //controls.target.set(0, 120, 0);
+    
     controls.update();
     window.addEventListener("resize", () => this.onWindowResize(this.renderer));
   }

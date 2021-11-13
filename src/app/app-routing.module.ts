@@ -7,8 +7,8 @@ const routes: Routes = [];
 @NgModule({
   imports: [
     SubCharactersModule,
-    RouterModule.forRoot(routes, { enableTracing: false, onSameUrlNavigation: 'reload' }),
+    RouterModule.forRoot(routes, { useHash: true }),
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
